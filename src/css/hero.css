@@ -16,7 +16,7 @@
 
   .hero-btn {
     padding: 12px 28px;
-    background-color: #fd9222;
+    background-color: var(--main-accent-color);
     border: 0;
     border-radius: 100px;
 
@@ -24,7 +24,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
-    color: #ffffff;
+    color: var(--white-color);
     letter-spacing: 0.03em;
   }
 
