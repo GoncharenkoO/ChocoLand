@@ -1,1 +1,227 @@
 /* Unique Components Section */
+.components .title {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 375px) {
+  .components .title {
+    width: 283px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .components .title {
+    width: 411px;
+    margin-bottom: 28px;
+
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+.title-accent {
+  color: var(--accent-color);
+}
+.text {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+@media screen and (min-width: 375px) {
+  .text {
+    width: 335px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .text {
+    width: 486px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-list {
+    flex-wrap: nowrap;
+  }
+}
+.card-item {
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .card-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card-item.choco {
+    order: 1;
+    margin-right: 32px;
+    margin-bottom: 32px;
+  }
+  .card-item.milk {
+    order: 3;
+    margin-right: 32px;
+  }
+  .card-item.nuts {
+    order: 4;
+  }
+  .card-item.chips {
+    order: 2;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-item:not(:last-child) {
+    margin-right: 19px;
+  }
+}
+
+.card {
+  padding: 28px 55px;
+  border-radius: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    padding: 28px 35px 28px 27px;
+  }
+}
+.card.choco {
+  background-color: var(--main-accent-color);
+  border: 1px solid transparent;
+  color: var(--white-color);
+}
+.card.milk,
+.card.chips {
+  background-color: var(--white-color);
+  border: 1px solid var(--main-accent-color);
+  color: var(--primary-color);
+}
+.card.nuts {
+  background-color: var(--secondary-color);
+  border: 1px solid transparent;
+  color: var(--white-color);
+}
+
+.card-img {
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 1200px) {
+  .card-img {
+    width: 206px;
+  }
+}
+.card-desc {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1199px) {
+  .card-desc {
+    transform: translateX(-28px);
+  }
+}
+
+.card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 28px;
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
+  border-radius: 15px;
+
+  transform: translateX(-100%);
+  transition: transform 250ms linear;
+}
+
+.card-item:hover .card-overlay,
+.card-item:focus .card-overlay {
+  transform: translateX(0);
+}
+.overlay-title {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.filter-btn,
+.filter-ben-btn {
+  display: inline-block;
+  padding: 6px 16px;
+  margin-bottom: 14px;
+  cursor: pointer;
+
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: var(--primary-color);
+
+  background-color: var(--white-color);
+  border: 1px solid var(--main-accent-color);
+  border-radius: 35px;
+  transition: backgroun-color 250ms linear, color 100ms linear;
+}
+.radio:checked + .filter-btn,
+.radio:checked + .filter-ben-btn {
+  background-color: var(--main-accent-color);
+  color: var(--white-color);
+}
+.filter-btn {
+  margin-right: 6px;
+}
+.filter-btn.chips,
+.filter-ben-btn.chips {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.radio:checked + .filter-btn ~ .ben-desc {
+  display: none;
+}
+.radio:checked + .filter-ben-btn ~ .desc {
+  display: none;
+}
+.desc,
+.ben-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--primary-color);
+}
