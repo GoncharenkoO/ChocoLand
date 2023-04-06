@@ -1,1 +1,77 @@
 /* Hero Section */
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-color: grey;
+  }
+
+  .hero-descrip {
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 14px;
+  }
+
+  .hero-btn {
+    padding: 12px 28px;
+    background-color: #fd9222;
+    border: 0;
+    border-radius: 100px;
+
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #ffffff;
+    letter-spacing: 0.03em;
+  }
+
+  .hero-how-it {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+
+    /* padding: 12px 28px;
+    border-radius: 100px;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.21;
+    color: #ffffff; */
+  }
+
+  .hero-scroll {
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+    gap: 12px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+  }
+
+  .scroll-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+  }
+
+  .scroll-icon {
+    fill: orange;
+    background-color: transparent;
+    /* border-radius: 50%; */
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
