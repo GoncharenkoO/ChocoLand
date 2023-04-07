@@ -1,1 +1,99 @@
 /* How its made Section */
+.how-it-made-video{
+    display: block;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 500px;
+}
+.how-its-made {
+    background-color: #E2E2E2;
+    margin-bottom: 72px;
+}
+.container {
+}
+.how-its-made-container {
+}
+.how-its-made-title {
+    margin-bottom: 32px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--primary-color);
+}
+.how-its-made-span {
+    color: var(--main-accent-color);
+}
+.how-its-made-list-wrap{
+    background-color: var(--white-color);
+    border-radius: 15px;
+    padding: 20px 14px;
+}
+.how-its-made-list-title {
+    margin-bottom: 20px;
+font-weight: 600;
+font-size: 18px;
+line-height: 1.33;
+color: var(--primary-color);
+text-align: left;
+}
+.how-its-made-list {
+    
+}
+.how-its-made-item{
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: var(--primary-color);
+    text-align: left;
+ }
+.how-its-made-item{
+
+
+}
+@media screen and (min-width: 375px) {
+    .how-it-made-video{
+        width: 335px;
+        max-height: 500px;
+    
+    }
+  }
+@media screen and (min-width: 768px) {
+    .how-it-made-video{
+       width: 100%;
+
+    
+    }
+    .how-its-made-title {
+        font-size: 24px;
+    }
+    .how-its-made-title {
+        margin-bottom: 50px;
+    }
+    .how-its-made-list-wrap{
+        padding: 32px;
+    }
+    .how-its-made-list-title{
+        margin-bottom: 28px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .how-its-made-item{
+        margin-bottom: 24px;
+    }
+    .how-its-made-wrap{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    .how-its-made-list-wrap{
+        max-width: 516px;
+    }
+    .how-it-made-video{
+       width: 600px;
+       height: 400px;
+       margin-bottom: 0;
+    }
+  }
