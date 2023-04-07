@@ -1,33 +1,25 @@
 /* Unique Components Section */
-.components .title {
+.components .section-title {
   width: auto;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 24px;
 
-  font-weight: 600;
   font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
 }
 @media screen and (min-width: 375px) {
-  .components .title {
+  .components .section-title {
     width: 283px;
   }
 }
 @media screen and (min-width: 768px) {
-  .components .title {
+  .components .section-title {
     width: 411px;
     margin-bottom: 28px;
 
     font-size: 24px;
     line-height: 1.17;
   }
-}
-.title-accent {
-  color: var(--accent-color);
 }
 .text {
   width: auto;
