@@ -131,21 +131,38 @@ body {
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 365px;
+    width: 375px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 734px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1166px;
+    width: 1200px;
   }
 }
+.section {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+@media screen and (max-width: 1157px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+
 .section-title {
   font-weight: 600;
   font-size: 24px;
