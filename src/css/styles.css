@@ -189,6 +189,7 @@ body {
   background-color: var(--main-accent-color);
   transition: color var(--time-function), background-color var(--time-function),
     border var(--time-function);
+  cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
