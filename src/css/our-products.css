@@ -1,6 +1,6 @@
 .products-title {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+
   color: var(--primary-color);
   font-weight: 600;
   font-size: 20px;
@@ -10,7 +10,6 @@
   margin-bottom: 32px;
 }
 .products-title-span {
-  font-family: 'Montserrat', sans-serif;
   color: var(--main-accent-color);
   font-weight: 600;
   font-size: 20px;
@@ -33,7 +32,6 @@
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: -0.02em;
-  font-family: 'Montserrat', sans-serif;
 
   margin-bottom: 2px;
   text-transform: uppercase;
@@ -45,7 +43,7 @@
   line-height: 0.86;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
-  font-family: 'Montserrat', sans-serif;
+
   margin-bottom: 18px;
 }
 .products-button {
