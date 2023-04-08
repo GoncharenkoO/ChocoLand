@@ -4,24 +4,19 @@
     border-radius: 15px;
     width: 100%;
     height: 500px;
+    
 }
 .how-its-made-video-wrap{
     margin-bottom: 20px;
 }
-.how-its-made {
-    background-color: #E2E2E2;
+
+.container .how-its-made-container {
+    padding-left: 20px;
+    padding-right: 20px;
 }
-.container {
-}
-.how-its-made-container {
-}
-.how-its-made-title {
+.how-its-made.section-title  {
     margin-bottom: 32px;
     font-size: 20px;
-    font-weight: 600;
-    letter-spacing: -0.03em;
-    text-align: center;
-    color: var(--primary-color);
 }
 .how-its-made-span {
     color: var(--main-accent-color);
@@ -38,6 +33,7 @@ font-size: 18px;
 line-height: 1.33;
 color: var(--primary-color);
 text-align: left;
+
 }
 
 .how-its-made-item{
@@ -77,15 +73,17 @@ top: 5px;
     }
   }
 @media screen and (min-width: 768px) {
- 
+    .how-its-made-container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    
     .how-it-made-video{
    width: 100%;
 max-height: 400px;
     
     }
-    .how-its-made-title {
-        font-size: 24px;
-    }
+  
     .how-its-made-title {
         margin-bottom: 50px;
     }
