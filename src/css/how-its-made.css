@@ -39,10 +39,7 @@ line-height: 1.33;
 color: var(--primary-color);
 text-align: left;
 }
-.how-its-made-list {
 
-
-}
 .how-its-made-item{
     margin-bottom: 18px;
     font-size: 14px;
@@ -50,7 +47,10 @@ text-align: left;
     letter-spacing: -0.02em;
     color: var(--primary-color);
     text-align: left;
- }
+    position: relative;
+margin-left: 15px;
+}
+ 
  .how-its-made-item::before{
     content: '';
     display: inline-block;
@@ -60,8 +60,14 @@ text-align: left;
     background-color: #4C4C4C;
     border: 1px solid #ECEDED;
     margin-right: 8px;
-    
+    position: absolute;
+left: -15px;
+top: 5px;
+
  }
+
+
+ 
 
 @media screen and (min-width: 375px) {
     .how-it-made-video{
