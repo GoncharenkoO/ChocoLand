@@ -2,13 +2,14 @@
 .how-it-made-video{
     display: block;
     border-radius: 15px;
-    margin-bottom: 20px;
     width: 100%;
     height: 500px;
 }
+.how-its-made-video-wrap{
+    margin-bottom: 20px;
+}
 .how-its-made {
     background-color: #E2E2E2;
-    margin-bottom: 72px;
 }
 .container {
 }
@@ -39,7 +40,8 @@ color: var(--primary-color);
 text-align: left;
 }
 .how-its-made-list {
-    
+
+
 }
 .how-its-made-item{
     margin-bottom: 18px;
@@ -49,10 +51,18 @@ text-align: left;
     color: var(--primary-color);
     text-align: left;
  }
-.how-its-made-item{
+ .how-its-made-item::before{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4C4C4C;
+    border: 1px solid #ECEDED;
+    margin-right: 8px;
+    
+ }
 
-
-}
 @media screen and (min-width: 375px) {
     .how-it-made-video{
         width: 335px;
@@ -61,9 +71,10 @@ text-align: left;
     }
   }
 @media screen and (min-width: 768px) {
+ 
     .how-it-made-video{
-       width: 100%;
-
+   width: 100%;
+max-height: 400px;
     
     }
     .how-its-made-title {
@@ -74,6 +85,7 @@ text-align: left;
     }
     .how-its-made-list-wrap{
         padding: 32px;
+     
     }
     .how-its-made-list-title{
         margin-bottom: 28px;
@@ -94,6 +106,8 @@ text-align: left;
     .how-it-made-video{
        width: 600px;
        height: 400px;
-       margin-bottom: 0;
+    }
+    .how-its-made-video-wrap{
+        margin-bottom: 0;
     }
   }
