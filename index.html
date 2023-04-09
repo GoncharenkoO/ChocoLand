@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/ChocoLand/assets/favicon-3095ef1a.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>ChocolateLand</title>
+    <title>ChocoLand</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -22,8 +22,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     
-    <script type="module" crossorigin src="/ChocoLand/assets/index-db46a957.js"></script>
-    <link rel="stylesheet" href="/ChocoLand/assets/index-2f13b611.css">
+    <script type="module" crossorigin src="/ChocoLand/assets/index-09170937.js"></script>
+    <link rel="stylesheet" href="/ChocoLand/assets/index-c077e65f.css">
   </head>
   <body>
     <header class="header container">
@@ -491,19 +491,26 @@
       <section></section>
 
       <section class="subscribe">
-    <div class="container">
-        <h2 class="section-title subscribe-title">
-            exPLORE OUR NEW CHOCOLATE FIRST
-        </h2>
-        <p class="subscribe-text">From the velvety texture to the rich and complex flavor, our New Chocolate is a true
-            indulgence that will
-            leave you
-            craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a
-            work of art
-            that is sure to please.</p>
-        <button type="button" class="btn btn-subscribe">Subscribe</button>
-    </div>
+  <div class="container">
+    <h2 class="section-title subscribe-title">
+      exPLORE OUR NEW CHOCOLATE FIRST
+    </h2>
+    <p class="subscribe-text">
+      From the velvety texture to the rich and complex flavor, our New Chocolate
+      is a true indulgence that will leave you craving more. Made with only the
+      finest ingredients and handcrafted with the utmost care, each piece is a
+      work of art that is sure to please.
+    </p>
+    <button
+      type="button"
+      class="btn btn-subscribe js-open-modal"
+      data-modal="1"
+    >
+      Subscribe
+    </button>
+  </div>
 </section>
+
       <footer class="footer" id="footer">
   <div class="container">
     <div class="footer-wrap-wrap">
@@ -574,14 +581,115 @@
 
 
       <!-- Modal windows -->
-      <section></section>
+      <!-- <section>
+  і
+</section>
 
       
 
-      <section></section>
+      <div class="modal" data-modal="1">
+  <button class="modal-cross js-modal-close">
+    <svg class="cross" width="24" height="24">
+      <use href="/img/sprite.svg#icon-close-modal24"></use>
+    </svg>
+  </button>
 
+  <picture>
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        /img/modal-subscribe/chocolate-md1x.jpg 1x,
+        /img/modal-subscribe/chocolate-md1x.jpg 2x
+      "
+      type="image/jpeg"
+    />
+    <source
+      media="(min-width: 375px)"
+      srcset="
+        /img/modal-subscribe/chocolate-sm1x.jpg 1x,
+        /img/modal-subscribe/chocolate-sm2x.jpg 2x
+      "
+    />
+    <img
+      src="/img/modal-subscribe/chocolate-sm1x.jpg"
+      alt="chocolate"
+      width="538"
+    />
+  </picture>
 
-      
+  <div class="subscribe-info">
+    <h2 class="section-title sub-modal-title">
+      Explore our
+      <span class="section-title-accent">new chocolate</span> first!
+    </h2>
+    <form class="subscribe-form">
+      <label class="subscribe-label">
+        <input
+          class="subscribe-mail"
+          type="email"
+          name="mail"
+          placeholder="Enter your email"
+        />
+      </label>
+      <button type="button" class="btn subscribe-modal-btn">Submit</button>
+    </form>
+  </div>
+</div>
+ -->
+
+      <!-- Substrate under the modal window -->
+<div class="overlay js-overlay-modal">
+  <section>
+  і
+</section>
+
+  
+
+  <div class="modal" data-modal="1">
+  <button class="modal-cross js-modal-close">
+    <svg class="cross" width="24" height="24">
+      <use href="/ChocoLand/assets/sprite-faf0a047.svg#icon-close-modal24"></use>
+    </svg>
+  </button>
+
+  <picture>
+    <source
+      media="(min-width: 768px)"
+      srcset="/ChocoLand/assets/chocolate-md1x-274cc8ad.jpg 1x, /ChocoLand/assets/chocolate-md1x-274cc8ad.jpg 2x"
+      type="image/jpeg"
+    />
+    <source
+      media="(min-width: 375px)"
+      srcset="/ChocoLand/assets/chocolate-sm1x-01a89877.jpg 1x, /ChocoLand/assets/chocolate-sm2x-731a6933.jpg 2x"
+    />
+    <img
+      src="/ChocoLand/assets/chocolate-sm1x-01a89877.jpg"
+      alt="chocolate"
+      width="538"
+    />
+  </picture>
+
+  <div class="subscribe-info">
+    <h2 class="section-title sub-modal-title">
+      Explore our
+      <span class="section-title-accent">new chocolate</span> first!
+    </h2>
+    <form class="subscribe-form">
+      <label class="subscribe-label">
+        <input
+          class="subscribe-mail"
+          type="email"
+          name="mail"
+          placeholder="Enter your email"
+        />
+      </label>
+      <button type="button" class="btn subscribe-modal-btn">Submit</button>
+    </form>
+  </div>
+</div>
+
+</div>
+
     </main>
 
     
