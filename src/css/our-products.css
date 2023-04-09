@@ -1,21 +1,10 @@
 .products-title {
-  text-align: center;
-
-  color: var(--primary-color);
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
   text-transform: uppercase;
   margin-bottom: 32px;
 }
-.products-title-span {
-  color: var(--main-accent-color);
+.section-title-accent {
   font-weight: 600;
   font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
 }
 
 .products-item {
@@ -96,6 +85,9 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-width: 375px) {
+  .section-title .products-title {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 768px) {
   .swiper-pagination {
@@ -106,6 +98,12 @@
   }
   .products-item {
     width: 270px;
+  }
+  .products-title {
+    font-size: 24px;
+  }
+  .products-title-span {
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 1200px) {
