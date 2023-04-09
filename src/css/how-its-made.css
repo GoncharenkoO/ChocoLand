@@ -1,4 +1,7 @@
 /* How its made Section */
+.how-its-made.section{
+    padding-top: 0;
+}
 .how-it-made-video{
     display: block;
     border-radius: 15px;
