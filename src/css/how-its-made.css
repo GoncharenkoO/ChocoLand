@@ -15,6 +15,7 @@
     padding-right: 20px;
 }
 
+
 .how-its-made-span {
     color: var(--main-accent-color);
 }
@@ -76,9 +77,12 @@ top: 5px;
     }
   }
 @media screen and (min-width: 768px) {
+
     .container.how-its-made-container {
         padding-left: 77px;
         padding-right: 77px;
+
+  
     }
     
     .how-it-made-video{
