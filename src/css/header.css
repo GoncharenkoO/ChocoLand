@@ -22,10 +22,6 @@
 }
 
 @media screen and (min-width: 375px) {
-  .container {
-    width: 365px;
-  }
-
   .header {
     display: flex;
   }
@@ -48,8 +44,8 @@
   }
 
   .header-mobile-menu-open-icon {
-    width: 21px;
-    height: 14px;
+    width: 32px;
+    height: 32px;
 
   }
 
@@ -188,10 +184,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 734px;
-  }
-
   .header-sidebar {
     left: 69%;
   }
@@ -200,9 +192,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    width: 1166px;
-  }
 
   .header {
     display: flex;
