@@ -1,75 +1,44 @@
 /* Explore-Our-News Modal Window */
-/* Стили для подложки */
-
-.overlay {
-
-   /* Скрываем подложку  */
-   opacity: 0;
-   visibility: hidden;
-
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: rgba(0, 0, 0, .5);
-   z-index: 20;
-   transition: .3s all;
-}
-
-
-/* Стили для модальных окон */
-
 .modal {
+  opacity: 0;
+  visibility: hidden;
 
-   /* Скрываем окна  */
-   opacity: 0;
-   visibility: hidden;
-
-
-   /*  Установаем ширину окна  */
-   width: 100%;
-   max-width: 500px;
-
-   /*  Центрируем и задаем z-index */
-   position: fixed;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   z-index: 30; /* Должен быть выше чем у подложки*/
-
-   /*  Побочные стили   */
-   box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
-   text-align: center;
-   padding: 30px;
-   border-radius: 3px;
-   background-color: #fff;
-   transition: 0.3s all;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  max-width: 311px;
+  min-height: 350px;
+  /* padding: 72px 24px 24px; */
+  /* z-index: 30; */
+  border-radius: 15px;
+  background-color: var(--body-bg-color);
+  box-shadow: var(--modal-shadow);
+  transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  transition: transform var(--time-function);
 }
-
-
-/* Стили для активных классов подложки и окна */
 
 .modal.active,
-.overlay.active{
-   opacity: 1;
-   visibility: visible;
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 
-
-/* Стили для кнопки закрытия */
-
-.modal__cross {
-   width: 15px;
-   height: 15px;
-   position: absolute;
-   top: 20px;
-   right: 20px;
-   fill: #444;
-   cursor: pointer;
+.modal-cross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #444;
+  cursor: pointer;
 }
 
-
+.subscribe-img {
+  margin-bottom: 32px;
+}
+.sub-modal-title {
+  margin-bottom: 24px;
+  text-align: left;
+}
 /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
 
 /* a {
