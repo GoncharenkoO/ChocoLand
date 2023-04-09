@@ -1,53 +1,48 @@
 <div class="modal" data-modal="1">
-  <button class=" modal-cross js-modal-close">
+  <button class="modal-cross js-modal-close">
     <svg class="cross" width="24" height="24">
-    <use href="/img/sprite.svg#icon-close-modal24"></use>
-  </svg>
+      <use href="/img/sprite.svg#icon-close-modal24"></use>
+    </svg>
   </button>
 
-  <div class="subsribe-thumb">
-   <div class="subscribe-img">
-      <picture>
-        <source
-          media="(min-width: 1200px)"
-          srcset="
-            /img/modal-subscribe/chocolate-md.jpg    1x,
-            /img/modal-subscribe/chocolate-md@2x.jpg 2x
-          "
-          type="image/jpeg"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            /img/modal-subscribe/chocolate-md.jpg    1x,
-            /img/modal-subscribe/chocolate-md@2x.jpg 2x
-          "
-          type="image/jpeg"
-        />
-        <img
-          srcset="
-            /img/modal-subscribe/chocolate-sm.jpg 1x,
-            /img/modal-subscribe/chocolate-sm@2x.jpg 2x
-          "
-          src="/img/modal-subscribe/chocolate-sm.jpg 1x"
-          alt="chocolate"
-        />
-      </picture>
-   </div>
+  <picture>
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        /img/modal-subscribe/chocolate-md1x.jpg 1x,
+        /img/modal-subscribe/chocolate-md1x.jpg 2x
+      "
+      type="image/jpeg"
+    />
+    <source
+      media="(min-width: 375px)"
+      srcset="
+        /img/modal-subscribe/chocolate-sm1x.jpg 1x,
+        /img/modal-subscribe/chocolate-sm2x.jpg 2x
+      "
+    />
+    <img
+      src="/img/modal-subscribe/chocolate-sm1x.jpg"
+      alt="chocolate"
+      width="538"
+    />
+  </picture>
 
-   <div class="subscribe-info">
-      <h2 class="section-title sub-modal-title">Explore our <span class="section-title-accent">new chocolate</span> first!</h2>
-      <form class="subscribe-form">
-        <label class="subscribe-label">
-          <input
-            class="subscribe-mail"
-            type="email"
-            name="mail"
-            placeholder="Enter your email"
-          />
-        </label>
-        <button type="button" class="btn subscribe-modal-btn">Submit</button>
-      </form>
-   </div>
+  <div class="subscribe-info">
+    <h2 class="section-title sub-modal-title">
+      Explore our
+      <span class="section-title-accent">new chocolate</span> first!
+    </h2>
+    <form class="subscribe-form">
+      <label class="subscribe-label">
+        <input
+          class="subscribe-mail"
+          type="email"
+          name="mail"
+          placeholder="Enter your email"
+        />
+      </label>
+      <button type="button" class="btn subscribe-modal-btn">Submit</button>
+    </form>
   </div>
 </div>

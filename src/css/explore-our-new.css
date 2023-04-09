@@ -6,15 +6,20 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100vw;
-  max-width: 311px;
+  width: 100%;
+  min-width: 311px;
   min-height: 350px;
-  /* padding: 72px 24px 24px; */
   border-radius: 15px;
   background-color: var(--body-bg-color);
   box-shadow: var(--modal-shadow);
   transform: translate(-50%, -50%) scale(0.75);
   transition: transform var(--time-function);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 538px;
+    min-height: 412px;
+  }
 }
 
 .modal.active,
@@ -49,14 +54,25 @@
   margin-bottom: 24px;
   text-align: left;
 }
-/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+.subscribe-info {
+  padding: 32px 24px;
+}
+.subscribe-mail {
+  padding: 14px 18px;
+  width: 100%;
+  min-height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 25px;
+  line-height: 1.21;
+  box-shadow: 0 5.44px 5.44px #00000008;
+  transition: border-color var(--time-function);
+}
+.subscribe-modal-btn {
+  min-height: 45px;
+  top: 89%;
+  left: 88%;
+  transform: translate(-89%, -88%) scale(1);
+  position: absolute;
 
-/* a {
-   padding: 20px;
-   display: inline-block;
-   text-decoration: none;
-   background-color: #414b52;
-   margin: 10px;
-   color: #fff;
-   border-radius: 3px;
-} */
+  transition: transform var(--time-function);
+}
