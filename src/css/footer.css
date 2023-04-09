@@ -43,9 +43,7 @@
   letter-spacing: -0.02em;
 
   color: var(--white-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contact-link:hover,
 .footer-contact-link:focus {
@@ -98,9 +96,7 @@
   letter-spacing: -0.02em;
 
   color: var(--white-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover,
 .footer-link:focus {
