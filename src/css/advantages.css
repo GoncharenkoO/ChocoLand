@@ -1,35 +1,11 @@
 /* Advantages Section */
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.advantages {
+  
 }
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-}
-ul,
-ol {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-.list {
+.advantages-list {
   display: flex;
-  justify-content: space-between;
   padding: 70px;
   gap: 70px;
-  list-style: none;
 }
 .container {
   width: 1200px;
@@ -39,7 +15,7 @@ img {
   margin: 0 auto;
   outline: 1px solid red;
 }
-.advantages-list {
+.advantages-item {
   width: 308px;
 }
 
