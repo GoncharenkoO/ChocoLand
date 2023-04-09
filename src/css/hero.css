@@ -10,7 +10,7 @@
     background-color: var(--secondary-color);
     max-width: 335px;
     height: 621px;
-    padding: 395px 20px 20px 20px;
+    padding: 395px 15px 20px 15px;
     margin-left: auto;
     margin-right: auto;
 
@@ -41,6 +41,12 @@
     }
   }
 
+  @media screen and (max-width: 374px) {
+    .container.hero-container {
+      padding-top: 330px;
+    }
+  }
+
   .hero-descrip {
     font-family: inherit;
     font-weight: 500;
@@ -54,8 +60,9 @@
 
   .hero-main-buttons {
     display: flex;
-    flex-direction: row;
-    gap: 14px;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    gap: 10px 14px;
   }
 
   .hero-buttons {
@@ -84,7 +91,7 @@
   }
 
   .hero-btn:is(:hover, :focus) {
-    background-color: #fcf1e0;
+    background-color: var(--main-hover-color);
     color: var(--main-accent-color);
   }
 
@@ -157,7 +164,7 @@
     background-color: var(--secondary-color);
     max-width: 704px;
     height: 890px;
-    padding: 671px 40px 40px;
+    padding: 660px 40px 40px;
     margin-left: auto;
     margin-right: auto;
 
@@ -192,7 +199,7 @@
     font-family: inherit;
     font-weight: 500;
     font-size: 28px;
-    line-height: 1.2;
+    line-height: 1.21;
     letter-spacing: -0.03em;
     color: var(--white-color);
     margin-bottom: 32px;
@@ -226,7 +233,7 @@
   }
 
   .hero-btn:is(:hover, :focus) {
-    background-color: #fcf1e0;
+    background-color: var(--main-hover-color);
     color: var(--main-accent-color);
   }
 
@@ -235,7 +242,7 @@
     align-items: center;
     padding: 14px 40px;
     background-color: transparent;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--white-color);
   }
 
   .hero-btn.hero-how-it:is(:hover, :focus) {
@@ -254,7 +261,7 @@
     font-size: 14px;
     line-height: 1.28;
     letter-spacing: -0.03em;
-    color: #ffffff;
+    color: var(--white-color);
   }
 
   .hero-scroll:is(:hover, :focus) {
@@ -265,14 +272,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: var(--white-color);
     border-radius: 50%;
     width: 38px;
     height: 38px;
   }
 
   .scroll-icon {
-    fill: orange;
+    fill: var(--main-accent-color);
     background-color: transparent;
     /* border-radius: 50%; */
   }
@@ -295,7 +302,7 @@
     background-color: var(--secondary-color);
     max-width: 1136px;
     height: 600px;
-    padding: 381px 40px 40px;
+    padding: 370px 40px 40px;
     margin-left: auto;
     margin-right: auto;
 
