@@ -84,10 +84,6 @@
     line-height: 1.21;
     color: var(--white-color);
     letter-spacing: 0.03em;
-
-    transition-property: background-color, color;
-    transition-duration: 350ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .hero-btn:is(:hover, :focus) {
@@ -230,6 +226,10 @@
     line-height: 1.21;
     color: var(--white-color);
     letter-spacing: 0.03em;
+
+    transition-property: background-color, color;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .hero-btn:is(:hover, :focus) {
@@ -243,6 +243,10 @@
     padding: 14px 40px;
     background-color: transparent;
     border: 1px solid var(--white-color);
+
+    transition-property: background-color, border-color, color;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .hero-btn.hero-how-it:is(:hover, :focus) {
@@ -262,6 +266,10 @@
     line-height: 1.28;
     letter-spacing: -0.03em;
     color: var(--white-color);
+
+    transition-property: color;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .hero-scroll:is(:hover, :focus) {
@@ -276,12 +284,20 @@
     border-radius: 50%;
     width: 38px;
     height: 38px;
+
+    transition-property: background-color;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .scroll-icon {
     fill: var(--main-accent-color);
     background-color: transparent;
     /* border-radius: 50%; */
+
+    transition-property: fill;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .hero-scroll:is(:hover, :focus) {
