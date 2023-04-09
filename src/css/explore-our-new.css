@@ -10,11 +10,10 @@
   max-width: 311px;
   min-height: 350px;
   /* padding: 72px 24px 24px; */
-  /* z-index: 30; */
   border-radius: 15px;
   background-color: var(--body-bg-color);
   box-shadow: var(--modal-shadow);
-  transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  transform: translate(-50%, -50%) scale(0.75);
   transition: transform var(--time-function);
 }
 
@@ -26,10 +25,21 @@
 
 .modal-cross {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  fill: #444;
-  cursor: pointer;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 15px;
+  right: 15px;
+  fill: var(--white-color);
+  background-color: transparent;
+  transition: color var(--time-function), background-color var(--time-function);
+}
+
+.modal-cross:hover,
+.modal-cross:focus {
+  fill: var(--main-accent-color);
 }
 
 .subscribe-img {
