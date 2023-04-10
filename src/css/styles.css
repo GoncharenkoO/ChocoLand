@@ -76,10 +76,6 @@
     url(/fonts/Montserrat-BoldItalic.woff2) format('woff2');
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
 }
