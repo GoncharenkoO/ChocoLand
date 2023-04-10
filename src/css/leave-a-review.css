@@ -3,8 +3,8 @@
 .leave-a-review {
 }
 .overlay-leave-a-review {
-    /* opacity: 0;
-   visibility: hidden; */
+    opacity: 0;
+   visibility: hidden;
 
     position: fixed;
     top: 0;
@@ -16,6 +16,7 @@
 transition: ;
 }
 .modal-leave-a-review {
+    padding: 32px 24px;
     border-radius: 15px;
     position: absolute;
     top: 50%;
@@ -50,3 +51,35 @@ transition: ;
 .modal-close-leave-a-review-btn:focus .modal-close-icon-leave-a-review:focus{
 fill: var(--main-accent-color);
 }
+/*    MODAL FORM */
+.modal-form-leave-a-review{
+    display: block;
+}
+.modal-form-leave-a-review-title.section-title{
+    text-align: left;
+    margin-bottom: 32px;
+}
+.modal-leave-a-review-span{
+    color: var(--main-accent-color);
+}
+.modal-form-leave-a-review-input{
+    width: 100%;
+    border-radius: 8px;
+    border: 1.5px solid rgba(0, 0, 0, 0.03);
+    background-color: var(--white-color);
+}
+@media screen and (max-width:767px) {
+   .modal-form-leave-a-review-title.section-title{
+    font-size: 20px;
+}  
+.modal-form-leave-a-review-input{
+height: 45px;
+margin-bottom: 14px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .modal-form-leave-a-review-title.section-title{
+        margin-bottom: 40px;
+    }
+   
+  }
