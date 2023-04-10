@@ -43,7 +43,7 @@
 
   @media screen and (max-width: 374px) {
     .container.hero-container {
-      padding-top: 330px;
+      padding: 330px 15px 20px 15px;
     }
   }
 
