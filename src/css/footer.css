@@ -15,6 +15,9 @@
 
   color: var(--white-color);
 }
+.footer-title-accent {
+  color: var(--main-accent-color);
+}
 .footer-wrap {
   display: flex;
   gap: 112px;
@@ -59,7 +62,6 @@
 }
 .footer-icon-link {
   color: var(--white-color);
-
 }
 .footer-icon {
   width: 22px;
@@ -77,7 +79,7 @@
 .footer-icon-link:hover .footer-icon,
 .footer-icon-link:focus .footer-icon {
   color: var(--main-accent-color);
-   transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 .footer-line {
   min-width: 335px;
