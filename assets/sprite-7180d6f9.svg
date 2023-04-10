@@ -44,5 +44,18 @@
 <path fill="#005bbb" style="fill: var(--color1, #005bbb)" d="M2.525 0h40.942c1.392 0 2.525 1.133 2.525 2.525v26.942c0 1.392-1.142 2.525-2.525 2.525h-40.942c-1.383 0.008-2.525-1.125-2.525-2.517v-26.95c0-1.392 1.142-2.525 2.525-2.525v0z"></path>
 <path fill="#ffd500" style="fill: var(--color2, #ffd500)" d="M0 16h46v13.475c0 1.392-1.142 2.525-2.525 2.525h-40.95c-1.383 0-2.525-1.133-2.525-2.525v-13.475z"></path>
 </symbol>
+<symbol id="iconMastercard" viewBox="0 0 51 32">
+<path fill="#ed0006" style="fill: var(--color3, #ed0006)" d="M25.6 26.935c-2.556 2.194-5.873 3.518-9.496 3.518-8.086 0-14.641-6.593-14.641-14.726s6.555-14.726 14.641-14.726c3.624 0 6.94 1.324 9.496 3.518 2.557-2.194 5.873-3.518 9.497-3.518 8.086 0 14.64 6.593 14.64 14.726s-6.555 14.726-14.64 14.726c-3.624 0-6.94-1.324-9.497-3.518z"></path>
+<path fill="#f9a000" style="fill: var(--color4, #f9a000)" d="M25.6 26.935c3.148-2.701 5.144-6.72 5.144-11.209s-1.996-8.507-5.144-11.208c2.556-2.194 5.873-3.518 9.497-3.518 8.086 0 14.64 6.593 14.64 14.726s-6.555 14.726-14.64 14.726c-3.624 0-6.94-1.324-9.497-3.518z"></path>
+<path fill="#ff5e00" style="fill: var(--color5, #ff5e00)" d="M25.6 26.935c3.148-2.701 5.144-6.72 5.144-11.208s-1.996-8.507-5.144-11.208c-3.148 2.701-5.144 6.72-5.144 11.208s1.996 8.507 5.144 11.208z"></path>
+</symbol>
+<symbol id="iconGroup" viewBox="0 0 43 32">
+<path fill="#ffd700" style="fill: var(--color1, #ffd700)" d="M42.443 0.078h-42.119v31.344h42.119v-31.344z"></path>
+<path fill="#0057b7" style="fill: var(--color2, #0057b7)" d="M0.324 0.078h42.119v15.672h-42.119v-15.672z"></path>
+</symbol>
+<symbol id="iconx-close" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M24 8l-16 16"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M8 8l16 16"></path>
+</symbol>
 </defs>
 </svg>
