@@ -22,8 +22,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     
-    <script type="module" crossorigin src="/ChocoLand/assets/index-6ff2dc74.js"></script>
-    <link rel="stylesheet" href="/ChocoLand/assets/index-4ef564fa.css">
+    <script type="module" crossorigin src="/ChocoLand/assets/index-a2e99fdc.js"></script>
+    <link rel="stylesheet" href="/ChocoLand/assets/index-0734b459.css">
   </head>
   <body>
     
@@ -767,19 +767,24 @@
                 <use href="../img/sprite.svg#icon-close-modal24"></use>
             </svg></button>
             <div class="modal-form-wrap-leave-a-review">
-                <p class="modal-form-leave-a-review-title">leave a review 
-                    about our chocolate</p>
+                <p class="modal-form-leave-a-review-title section-title">leave a review 
+                    about <span class="modal-leave-a-review-span">our chocolate</span> </p>
                     <form class="modal-form-leave-a-review">
                         <label class="modal-form-leave-a-review-field" >
                              
                             <input class="modal-form-leave-a-review-input" 
+                            placeholder="Name"
                             required
                             name="user_name"
-                            type="text">
+                            type="text"
+                            pattern="^[a-zA-Zа-яА-Я]+"
+                            minlength="2"
+                            >
                         </label>
                         <label class="modal-form-leave-a-review-field" >
                            
                            <input class="modal-form-leave-a-review-input" 
+                           placeholder="Enter your email"
                            required
                            name="user-mail"
                            type="text">
@@ -787,14 +792,18 @@
                        <label class="modal-form-leave-a-review-field" >
                        
                        <input class="modal-form-leave-a-review-input" 
+                       placeholder="Phone number"
                        required
                        name="user-phone"
-                       type="tel">
+                       type="tel"
+                       pattern="[0-9]{3}-[0-9][3]-[0-9]{2}-[0-9]{2}"
+                       title="xxx-xxx-xx-xx">
                    </label>
                    <label class="modal-form-leave-a-review-field" >
                    <textarea
-                   name="" 
-                   id="" 
+                   required
+                   name="user_message" 
+                 class="modal-form-leave-a-review-message"
                    placeholder="Enter text"></textarea>
                </label>
                <button class="modal-form-leave-a-review" type="submit">Send</button>
@@ -1023,19 +1032,24 @@
                 <use href="../img/sprite.svg#icon-close-modal24"></use>
             </svg></button>
             <div class="modal-form-wrap-leave-a-review">
-                <p class="modal-form-leave-a-review-title">leave a review 
-                    about our chocolate</p>
+                <p class="modal-form-leave-a-review-title section-title">leave a review 
+                    about <span class="modal-leave-a-review-span">our chocolate</span> </p>
                     <form class="modal-form-leave-a-review">
                         <label class="modal-form-leave-a-review-field" >
                              
                             <input class="modal-form-leave-a-review-input" 
+                            placeholder="Name"
                             required
                             name="user_name"
-                            type="text">
+                            type="text"
+                            pattern="^[a-zA-Zа-яА-Я]+"
+                            minlength="2"
+                            >
                         </label>
                         <label class="modal-form-leave-a-review-field" >
                            
                            <input class="modal-form-leave-a-review-input" 
+                           placeholder="Enter your email"
                            required
                            name="user-mail"
                            type="text">
@@ -1043,14 +1057,18 @@
                        <label class="modal-form-leave-a-review-field" >
                        
                        <input class="modal-form-leave-a-review-input" 
+                       placeholder="Phone number"
                        required
                        name="user-phone"
-                       type="tel">
+                       type="tel"
+                       pattern="[0-9]{3}-[0-9][3]-[0-9]{2}-[0-9]{2}"
+                       title="xxx-xxx-xx-xx">
                    </label>
                    <label class="modal-form-leave-a-review-field" >
                    <textarea
-                   name="" 
-                   id="" 
+                   required
+                   name="user_message" 
+                 class="modal-form-leave-a-review-message"
                    placeholder="Enter text"></textarea>
                </label>
                <button class="modal-form-leave-a-review" type="submit">Send</button>
