@@ -1,4 +1,5 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=01BB1BAE&center=true&multiline=true&width=800&height=80&lines=Team+%3C+Web4You+%3E+%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB;-----+SIMPLY+CHOCOLATE+TEMPLATE+%F0%9F%8D%AB+----)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Lato&weight=500&pause=1000&color=3147F7&background=FFFFFF00&center=true&vCenter=true&width=435&lines=TEAM+ChocoLand+U+1F4BB;----SIMPLY+CHOCOLATE+PROJECT----)](https://git.io/typing-svg)
+
 
 ---
 
@@ -65,7 +66,7 @@ Here's why:
 - Катерина Чубач
 - Олег Гончар
 - Iryna Pervushyna
-- Богдана
+- Богдана Липська
 - Illya Melnikov
 
 ---
