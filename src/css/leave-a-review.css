@@ -1,1 +1,85 @@
 /* Leave-A-Review Modal Window */
+/* Leave-A-Review Modal Window */
+.leave-a-review {
+}
+.overlay-leave-a-review {
+    opacity: 0;
+   visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+transition: ;
+}
+.modal-leave-a-review {
+    padding: 32px 24px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 311px ;
+    height: 471px;
+    background-color: var(--body-bg-color);
+}
+.modal-close-leave-a-review-btn {
+ position: absolute;
+ top: 14px;
+ right: 14px;
+    /* width: 24px;
+    height: 24px; */
+    background-color: transparent;
+    border-radius: 50%;
+    border-color: transparent;
+    /* border: none; */
+    padding: 0;
+    transition: background-color var(--time-function);
+}
+.modal-close-icon-leave-a-review{
+    transition: fill var(--time-function);
+}
+.modal-close-leave-a-review-btn:hover,
+.modal-close-leave-a-review-btn:focus{
+    background-color: #FCF1E0;
+
+}
+.modal-close-leave-a-review-btn:hover .modal-close-icon-leave-a-review:hover,
+.modal-close-leave-a-review-btn:focus .modal-close-icon-leave-a-review:focus{
+fill: var(--main-accent-color);
+}
+/*    MODAL FORM */
+.modal-form-leave-a-review{
+    display: block;
+}
+.modal-form-leave-a-review-title.section-title{
+    text-align: left;
+    margin-bottom: 32px;
+}
+.modal-leave-a-review-span{
+    color: var(--main-accent-color);
+}
+.modal-form-leave-a-review-input{
+    width: 100%;
+    border-radius: 8px;
+    border: 1.5px solid rgba(0, 0, 0, 0.03);
+    background-color: var(--white-color);
+}
+@media screen and (max-width:767px) {
+   .modal-form-leave-a-review-title.section-title{
+    font-size: 20px;
+}  
+.modal-form-leave-a-review-input{
+height: 45px;
+margin-bottom: 14px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .modal-form-leave-a-review-title.section-title{
+        margin-bottom: 40px;
+    }
+   
+  }

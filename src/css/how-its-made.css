@@ -1,1 +1,128 @@
 /* How its made Section */
+.how-its-made.section{
+    padding-top: 0;
+}
+.how-it-made-video{
+    display: block;
+    border-radius: 15px;
+    width: 100%;
+    height: 500px;
+    
+}
+.how-its-made-video-wrap{
+    margin-bottom: 20px;
+}
+
+.container.how-its-made-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.how-its-made-span {
+    color: var(--main-accent-color);
+}
+.how-its-made-list-wrap{
+    background-color: var(--white-color);
+    border-radius: 15px;
+    padding: 20px 14px;
+}
+.how-its-made-list-title {
+    margin-bottom: 20px;
+font-weight: 600;
+font-size: 18px;
+line-height: 1.33;
+color: var(--primary-color);
+text-align: left;
+
+}
+
+.how-its-made-item{
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: var(--primary-color);
+    text-align: left;
+    position: relative;
+margin-left: 15px;
+}
+ 
+ .how-its-made-item::before{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4C4C4C;
+    border: 1px solid #ECEDED;
+    margin-right: 8px;
+    position: absolute;
+left: -15px;
+top: 5px;
+
+ }
+
+
+ 
+
+@media screen and (min-width: 375px) {
+    .how-it-made-video{
+        width: 335px;
+        max-height: 500px;
+    
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .how-its-made-title.section-title  {
+        margin-bottom: 32px;
+        font-size: 20px;
+    }
+  }
+@media screen and (min-width: 768px) {
+
+    .container.how-its-made-container {
+        padding-left: 77px;
+        padding-right: 77px;
+
+  
+    }
+    
+    .how-it-made-video{
+   width: 100%;
+max-height: 400px;
+    
+    }
+  
+    .how-its-made-title {
+        margin-bottom: 50px;
+    }
+    
+    .how-its-made-list-title{
+        margin-bottom: 28px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .container.how-its-made-container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .how-its-made-item{
+        margin-bottom: 24px;
+    }
+    .how-its-made-wrap{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    .how-its-made-list-wrap{
+        max-width: 516px;
+    }
+    .how-it-made-video{
+       width: 600px;
+       height: 400px;
+    }
+    .how-its-made-video-wrap{
+        margin-bottom: 0;
+    }
+  }

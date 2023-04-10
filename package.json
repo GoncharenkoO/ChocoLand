@@ -1,11 +1,11 @@
 {
-  "name": "chocolateland",
+  "name": "chocoland",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/ChocolateLand/",
+    "build": "vite build --base=/ChocoLand/",
     "preview": "vite preview"
   },
   "devDependencies": {
