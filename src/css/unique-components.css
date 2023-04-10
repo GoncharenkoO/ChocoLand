@@ -140,10 +140,10 @@
 
 .card-overlay {
   position: absolute;
-  width: 100%;
+  width: 101%;
   height: 100%;
   top: 0;
-  left: 0;
+  left: -1px;
   padding: 28px;
   background-color: var(--white-color);
   border: 1px solid var(--white-color);
