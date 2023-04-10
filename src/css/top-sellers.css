@@ -1,1 +1,74 @@
 /* Top-Seller Section */
+.top-sellers {
+    margin-top: 0;
+}
+
+
+.top-sells {
+    text-align: center;
+    color: #FD9222;
+    margin-bottom: 50px;
+}
+
+.top-sells-logo {
+    color: #111111
+
+}
+
+.sells {
+  display: flex;
+}
+
+.top-sellers-image {
+    border-radius: 15px;
+}
+ 
+.top-sellers-images {
+    margin-left: 16px;
+    border-radius: 15px;
+}
+
+.hero-buttons {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hero-btn {
+    padding: 14px 40px;
+    background-color: var(--main-accent-color);
+    border: 0;
+    border-radius: 100px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: var(--white-color);
+    letter-spacing: .03em;
+    transition-property: background-color,color;
+    transition-duration: .35s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    max-height: 50px;
+  }
+
+  .hero-btn:is(:hover, :focus) {
+    background-color: var(--main-hover-color);
+    color: var(--main-accent-color);
+  }
+
+  .hero-btn.hero-how-it:is(:hover, :focus) {
+    background-color: var(--white-color);
+    border-color: var(--main-accent-color);
+    color: var(--main-accent-color);
+  }
+
+  .top-sellers-text {
+    max-width: 407px;
+    max-height: 72px;
+  }
+  
+  .top-sellers-info {
+    display: flex;
+    margin-top: 32px;
+    justify-content: space-between;
+  }
