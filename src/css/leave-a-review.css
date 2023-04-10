@@ -26,6 +26,11 @@ transition: ;
     height: 471px;
     background-color: var(--body-bg-color);
 }
+.modal-leave-a-review.active,
+.modal-leave-a-review.active{
+   opacity: 1;
+   visibility: visible;
+}
 .modal-close-leave-a-review-btn {
  position: absolute;
  top: 14px;
@@ -74,12 +79,17 @@ fill: var(--main-accent-color);
 }
 .modal-form-leave-a-review-icon{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 18px;
     display: block;
     width: 24px;
     height: 24px;
+    fill:tomato;
 }
+.input-phone{
+    padding-left: 50px;
+}
+
 .modal-icon-leave-a-review-wrap{
     position: relative;
 }
@@ -113,6 +123,7 @@ outline: none;
     line-height: 1.2;
     letter-spacing: -0.02em; 
 }
+
 @media screen and (max-width:767px) {
    .modal-form-leave-a-review-title.section-title{
     font-size: 20px;
