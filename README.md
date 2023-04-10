@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=3147F7&center=true&multiline=true&width=800&height=80&lines=TEAM+ChocoLand+💻;-----+SIMPLY+CHOCOLATE+PROJECT+%F0%9F%8D%AB+----)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=3147F7&center=true&multiline=true&width=800&height=80&lines=TEAM+💛+ChocoLand+💻+💙;🔥+SIMPLY+CHOCOLATE+PROJECT+%F0%9F%8D%AB+🔥)](https://git.io/typing-svg)
 
 
 ---
