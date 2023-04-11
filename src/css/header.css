@@ -1,5 +1,4 @@
-.header {
-  position: relative;
+.page-header {
   display: flex;
   align-items: center;
 }
@@ -10,7 +9,6 @@
 .header-title {
   padding: 24px 0;
   font-weight: 700;
-  font-size: 18px;
   letter-spacing: -0.03em;
 
   color: var(--primary-color);
