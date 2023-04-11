@@ -3,23 +3,17 @@
   opacity: 0;
   visibility: hidden;
 
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-  width: 100%;
-  min-width: 311px;
-  min-height: 350px;
+  width: 311px;
+  height: 350px;
   border-radius: 15px;
+  z-index: 30;
   background-color: var(--body-bg-color);
   box-shadow: var(--modal-shadow);
   transform: translate(-50%, -50%) scale(0.75);
   transition: transform var(--time-function);
-}
-@media screen and (min-width: 768px) {
-  .modal {
-    min-width: 538px;
-    min-height: 412px;
-  }
 }
 
 .modal.active,
