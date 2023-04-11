@@ -117,11 +117,18 @@
   position: relative;
 }
 
+
 .btn-up-position {
   position: fixed;
   bottom: 40px;
-  right: 25px;
+  right: 45px;
   z-index: 20;
+}
+@media screen and (min-width: 375px) {
+  .btn-up-position {
+      right: 25px;
+  }
+
 }
 
 .btn-up-style {
@@ -130,7 +137,7 @@
   border-radius: 50%;
   height: 50px;
   width: 50px;
-  color: #fff;
+  color: var(--white-color);
   cursor: pointer;
   animation: movebtn 3s ease-in-out infinite;
   transition: all 0.5s ease-in-out;
