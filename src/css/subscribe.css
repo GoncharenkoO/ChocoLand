@@ -7,9 +7,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     padding: 62px 0 63px 0;
     text-align: center;
-    max-width: 375px;
+
     height: 370px;
 }
 /*mobil*/
@@ -50,7 +51,7 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
 
 @media screen and (min-width: 768px) {
     .subscribe {
-        max-width: 768px;
+       
         height: 370px;
         padding: 72px 0 72px 0;
     }
@@ -83,7 +84,11 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx){
 }
 @media screen and (min-width: 1200px) {
     .subscribe{
-        max-width: 1200px;
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
         height: 370px;
         padding: 72px 0 95px 0;
     }
