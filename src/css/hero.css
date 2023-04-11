@@ -4,6 +4,7 @@
   .hero {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 72px;
   }
 
   .container.hero-container {
@@ -43,7 +44,7 @@
 
   @media screen and (max-width: 374px) {
     .container.hero-container {
-      padding-top: 330px;
+      padding: 330px 15px 20px 15px;
     }
   }
 
@@ -156,6 +157,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 72px;
+  }
   .container.hero-container {
     background-color: var(--secondary-color);
     max-width: 704px;
