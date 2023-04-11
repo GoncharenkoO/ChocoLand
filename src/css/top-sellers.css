@@ -3,7 +3,6 @@
 }
 .top-sellers.section {
   padding-top: 0;
-  max-height: 646px;
 }
 
 .top-sellers-container {
@@ -24,6 +23,9 @@ padding-bottom: 32px;
 
 .top-sellers-title-span {
 color: #FD9222;
+}
+
+.top-sellers-item {
 }
 
 .top-sellers-list {
