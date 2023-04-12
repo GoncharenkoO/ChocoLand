@@ -44,10 +44,27 @@
 .subscribe-img {
   margin-bottom: 32px;
 }
-.sub-modal-title {
+.section-title.sub-modal-title {
   margin-bottom: 24px;
   text-align: left;
+  font-size: 20px;
 }
+
+.thumb-modal-explore {
+  width: 311px;
+  height: 169px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.thumb-modal-explore > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+}
+
 .subscribe-info {
   padding: 32px 24px;
 }
