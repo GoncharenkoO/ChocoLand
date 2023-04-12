@@ -21,6 +21,9 @@
     line-height: 1.17;
   }
 }
+.components-title .section-title-accent {
+  font-size: 24px;
+}
 .text {
   width: auto;
   margin-left: auto;

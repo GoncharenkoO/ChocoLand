@@ -121,7 +121,7 @@
 .btn-up-position {
   position: fixed;
   bottom: 40px;
-  right: 45px;
+  right: 15px;
   z-index: 20;
 }
 @media screen and (min-width: 375px) {
