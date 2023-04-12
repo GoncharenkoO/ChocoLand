@@ -6,8 +6,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  min-width: 311px;
-  min-height: 350px;
+
   border-radius: 15px;
   z-index: 30;
   background-color: var(--body-bg-color);
@@ -15,12 +14,16 @@
   transform: translate(-50%, -50%) scale(0.75);
   transition: transform var(--time-function);
 }
+.modal.explore {
+  min-width: 311px;
+  height: 350px;
+}
 
 @media screen and (min-width: 768px) {
-.modal {
+  .modal.explore {
     min-width: 538px;
     min-height: 412px;
-}
+  }
 }
 
 .modal.active,
@@ -34,9 +37,9 @@
   border-top-right-radius: 15px;
 }
 @media screen and (min-width: 768px) {
-.explore-modal-img {
+  .explore-modal-img {
     min-width: 538px;
-}
+  }
 }
 
 .modal-cross {
@@ -67,10 +70,10 @@
   font-size: 20px;
 }
 @media screen and (min-width: 768px) {
-.section-title.sub-modal-title.section-title-accent {
-  margin-bottom: 28px;
-  font-size: 24px;
-}
+  .section-title.sub-modal-title.section-title-accent {
+    margin-bottom: 28px;
+    font-size: 24px;
+  }
 }
 
 .subscribe-info {
