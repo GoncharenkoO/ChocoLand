@@ -23,8 +23,8 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
-    <script type="module" crossorigin src="/ChocoLand/assets/index-86161851.js"></script>
-    <link rel="stylesheet" href="/ChocoLand/assets/index-aa2380ad.css">
+    <script type="module" crossorigin src="/ChocoLand/assets/index-4e320fff.js"></script>
+    <link rel="stylesheet" href="/ChocoLand/assets/index-17338bab.css">
   </head>
   <body>
     <header class="header">
@@ -633,7 +633,7 @@
         </p>
       </li>
     </ul>
-    <button type="button" class="btn reviews">Leave a review</button>
+    <button type="button" class="btn reviews js-open-modal" data-modal="2">Leave a review</button>
   </div>
 </section>
 
@@ -876,79 +876,79 @@
   </div>
 </div> -->
 
-      <!-- 
-
-  <div class="modal-leave-a-review" data-modal="3">
-    <button type="button" class="modal-close-leave-a-review-btn js-modal-close" data-modal="3">
-      <svg class="modal-close-icon-leave-a-review" width="24" height="24">
-        <use href="../img/sprite.svg#icon-close-modal24"></use>
-      </svg>
-    </button>
-    <div class="modal-form-leave-a-review-title-wrap">
-      <p class="modal-form-leave-a-review-title section-title">
-        leave a review about
-        <span class="modal-leave-a-review-span">our chocolate</span>
-      </p>
-    </div>
-    <div class="modal-form-wrap-leave-a-review">
-      <form class="modal-form-leave-a-review">
-        <label class="modal-form-leave-a-review-field">
-          <input
-            class="modal-form-leave-a-review-input"
-            placeholder="Name"
-            required
-            name="user_name"
-            type="text"
-            pattern="^[a-zA-Zа-яА-Я]+"
-            minlength="2"
-          />
-        </label>
-        <label class="modal-form-leave-a-review-field">
-          <input
-            class="modal-form-leave-a-review-input"
-            placeholder="Enter your email"
-            required
-            name="user-mail"
-            type="text"
-          />
-        </label>
-        <div class="modal-leave-a-review-container">
-           <div class="modal-icon-leave-a-review-wrap">
+      <div class="modal review" data-modal="2">
+  <button
+    type="button"
+    class="modal-close-leave-a-review-btn js-modal-close"
+    data-modal="2"
+  >
+    <svg class="modal-close-icon-leave-a-review" width="24" height="24">
+      <use href="../img/sprite.svg#icon-close-modal24"></use>
+    </svg>
+  </button>
+  <div class="modal-form-leave-a-review-title-wrap">
+    <p class="modal-form-leave-a-review-title section-title">
+      leave a review about
+      <span class="modal-leave-a-review-span">our chocolate</span>
+    </p>
+  </div>
+  <div class="modal-form-wrap-leave-a-review">
+    <form class="modal-form-leave-a-review">
+      <label class="modal-form-leave-a-review-field">
+        <input
+          class="modal-form-leave-a-review-input"
+          placeholder="Name"
+          required
+          name="user_name"
+          type="text"
+          pattern="^[a-zA-Zа-яА-Я]+"
+          minlength="2"
+        />
+      </label>
+      <label class="modal-form-leave-a-review-field">
+        <input
+          class="modal-form-leave-a-review-input"
+          placeholder="Enter your email"
+          required
+          name="user-mail"
+          type="text"
+        />
+      </label>
+      <div class="modal-leave-a-review-container">
+        <div class="modal-icon-leave-a-review-wrap">
           <label class="modal-form-leave-a-review-field">
-           <span class="modal-form-phone-wraper"><svg class="flag-phone" width="24" height="24">
-            <use href="../img/sprite.svg#icon-ukraine-flag"></use>
-           </svg> +380</span>
-              <input
-                class="modal-form-leave-a-review-input input-phone"
-                placeholder="Phone number"
-                required
-                name="user-phone"
-                type="tel"
-      
-                pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                title="xx-xxx-xx-xx"
-              />
-            
-          </label>
-          </div>
-          <label class="modal-form-leave-a-review-field">
-            <textarea
+            <span class="modal-form-phone-wraper"
+              ><svg class="flag-phone" width="24" height="24">
+                <use href="../img/sprite.svg#icon-ukraine-flag"></use>
+              </svg>
+              +380</span
+            >
+            <input
+              class="modal-form-leave-a-review-input input-phone"
+              placeholder="Phone number"
               required
-              name="user_message"
-              class="modal-form-leave-a-review-message"
-              placeholder="Enter text"
-            ></textarea>
+              name="user-phone"
+              type="tel"
+              pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xx-xxx-xx-xx"
+            />
           </label>
         </div>
-        <button class="modal-form-leave-a-review btn" type="button">
-          Send
-        </button>
-      </form>
-    </div>
+        <label class="modal-form-leave-a-review-field">
+          <textarea
+            required
+            name="user_message"
+            class="modal-form-leave-a-review-message"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
+      </div>
+      <button class="modal-form-leave-a-review btn" type="button">Send</button>
+    </form>
   </div>
- -->
+</div>
 
-      <div class="modal" data-modal="1">
+      <div class="modal explore" data-modal="1">
   <button class="modal-cross js-modal-close" data-modal="1">
     <svg class="cross" width="24" height="24">
       <use href="/ChocoLand/assets/sprite-7180d6f9.svg#icon-close-modal24"></use>
@@ -957,12 +957,12 @@
   <picture>
     <source
       media="(min-width: 1200px)"
-      srcset="/ChocoLand/assets/chocolate-md1x-274cc8ad.jpg 1x, /ChocoLand/assets/chocolate-md1x-274cc8ad.jpg 2x"
+      srcset="/ChocoLand/assets/chocolate-md1x-274cc8ad.jpg 1x, /ChocoLand/assets/chocolate-md2x-11d2bcae.jpg 2x"
       type="image/jpeg"
     />
     <source
       media="(min-width: 768px)"
-      srcset="/ChocoLand/assets/chocolate-md1x-274cc8ad.jpg 1x, /ChocoLand/assets/chocolate-md1x-274cc8ad.jpg 2x"
+      srcset="/ChocoLand/assets/chocolate-md1x-274cc8ad.jpg 1x, /ChocoLand/assets/chocolate-md2x-11d2bcae.jpg 2x"
       type="image/jpeg"
     />
     <source
@@ -999,7 +999,6 @@
     </div>
   </div>
 </div>
-
 
 
       <div class="overlay js-overlay-modal"></div>
