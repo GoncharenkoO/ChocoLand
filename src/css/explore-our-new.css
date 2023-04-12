@@ -3,29 +3,40 @@
   opacity: 0;
   visibility: hidden;
 
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-  width: 100%;
   min-width: 311px;
   min-height: 350px;
   border-radius: 15px;
+  z-index: 30;
   background-color: var(--body-bg-color);
   box-shadow: var(--modal-shadow);
   transform: translate(-50%, -50%) scale(0.75);
   transition: transform var(--time-function);
 }
+
 @media screen and (min-width: 768px) {
-  .modal {
+.modal {
     min-width: 538px;
     min-height: 412px;
-  }
+}
 }
 
 .modal.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
+}
+.explore-modal-img {
+  min-width: 311px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+@media screen and (min-width: 768px) {
+.explore-modal-img {
+    min-width: 538px;
+}
 }
 
 .modal-cross {
@@ -50,12 +61,23 @@
 .subscribe-img {
   margin-bottom: 32px;
 }
-.sub-modal-title {
+.section-title.sub-modal-title {
   margin-bottom: 24px;
   text-align: left;
+  font-size: 20px;
 }
+@media screen and (min-width: 768px) {
+.section-title.sub-modal-title.section-title-accent {
+  margin-bottom: 28px;
+  font-size: 24px;
+}
+}
+
 .subscribe-info {
   padding: 32px 24px;
+}
+.subscribe-wrap {
+  position: relative;
 }
 .subscribe-mail {
   padding: 14px 18px;
@@ -67,11 +89,14 @@
   box-shadow: 0 5.44px 5.44px #00000008;
   transition: border-color var(--time-function);
 }
+@media screen and (max-width: 374px) {
+}
+
 .subscribe-modal-btn {
   min-height: 45px;
   top: 89%;
-  left: 88%;
-  transform: translate(-89%, -88%) scale(1);
+  left: 99%;
+  transform: translate(-99%, -89%) scale(1);
   position: absolute;
 
   transition: transform var(--time-function);
