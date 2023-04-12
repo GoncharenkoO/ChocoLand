@@ -1,8 +1,6 @@
 /* Leave-A-Review Modal Window */
 
-.leave-a-review {
-}
-.overlay-leave-a-review {
+/* .overlay-leave-a-review {
   opacity: 0;
   visibility: hidden;
 
@@ -13,21 +11,33 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
-  /* transition: ; */
-}
+  transition: ;
+} */
 .modal-leave-a-review {
+   /* opacity: 0;
+  visibility: hidden; */
+
   padding: 32px 24px;
   border-radius: 15px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 311px;
   height: 471px;
+  z-index: 30;
   background-color: var(--body-bg-color);
+  box-shadow: var(--modal-shadow);
+  transition: transform var(--time-function);
 }
-.modal-leave-a-review.active,
-.modal-leave-a-review.active {
+@media screen and (min-width: 768px){
+  .modal-leave-a-review{
+    width: 517px;
+  height: 631px;
+  }
+}
+.modal.leave-a-review.active,
+.overlay.active {
   opacity: 1;
   visibility: visible;
 }
@@ -83,7 +93,7 @@
   display: block;
   width: 24px;
   height: 24px;
-  fill: tomato;
+  
 }
 .input-phone {
   padding-left: 50px;
@@ -152,5 +162,8 @@
   }
   .modal-form-leave-a-review-message {
     height: 137px;
+  }
+  .modal-form-leave-a-review-icon{
+    top: 20px;
   }
 }
