@@ -33,6 +33,11 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+@media screen and (min-width: 768px) {
+.explore-modal-img {
+    min-width: 538px;
+}
+}
 
 .modal-cross {
   position: absolute;
