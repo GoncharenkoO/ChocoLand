@@ -23,8 +23,8 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
-    <script type="module" crossorigin src="/ChocoLand/assets/index-5d36dbe8.js"></script>
-    <link rel="stylesheet" href="/ChocoLand/assets/index-3259ecc0.css">
+    <script type="module" crossorigin src="/ChocoLand/assets/index-42582bee.js"></script>
+    <link rel="stylesheet" href="/ChocoLand/assets/index-b183a79a.css">
   </head>
   <body>
     <header class="header">
@@ -214,7 +214,7 @@
 
       <section class="components section" id="uniqe-components">
   <div class="container">
-    <h2 class="section-title">
+    <h2 class="section-title components-title">
       IT ALL ADDS UP TO ONE EXCEPTIONAL
       <span class="section-title-accent">TASTE</span> SENSATION
     </h2>
@@ -902,24 +902,27 @@
       <use href="/ChocoLand/assets/sprite-7180d6f9.svg#icon-close-modal24"></use>
     </svg>
   </button>
-  <div class="thumb-modal-explore">
-    <picture>
-      <source
-        media="(min-width: 768px)"
-        srcset="/ChocoLand/assets/chocolate-md1x-274cc8ad.jpg 1x, /ChocoLand/assets/chocolate-md1x-274cc8ad.jpg 2x"
-        type="image/jpeg"
-      />
-      <source
-        media="(min-width: 375px)"
-        srcset="/ChocoLand/assets/chocolate-sm1x-01a89877.jpg 1x, /ChocoLand/assets/chocolate-sm2x-731a6933.jpg 2x"
-      />
-      <img
-        src="/ChocoLand/assets/chocolate-sm1x-01a89877.jpg"
-        alt="chocolate"
-        width="538"
-      />
-    </picture>
-  </div>
+  <picture>
+    <source
+      media="(min-width: 768px)"
+      srcset="/ChocoLand/assets/chocolate-md1x-274cc8ad.jpg 1x, /ChocoLand/assets/chocolate-md1x-274cc8ad.jpg 2x"
+      type="image/jpeg"
+    />
+    <source
+      media="(max-width: 767px)"
+      srcset="/ChocoLand/assets/chocolate-sm1x-01a89877.jpg 1x, /ChocoLand/assets/chocolate-sm2x-731a6933.jpg 2x"
+    />
+    <source
+      media="(min-width: 375px)"
+      srcset="/ChocoLand/assets/chocolate-md1x-274cc8ad.jpg 1x, /ChocoLand/assets/chocolate-md1x-274cc8ad.jpg 2x"
+    />
+
+    <img
+      class="explore-modal-img"
+      src="/ChocoLand/assets/chocolate-md1x-274cc8ad.jpg"
+      alt="chocolate"
+    />
+  </picture>
 
   <div class="subscribe-info">
     <div class="subscribe-text-lines">
@@ -928,17 +931,19 @@
         <span class="section-title-accent">new chocolate</span> first!
       </h2>
     </div>
-    <form class="subscribe-form">
-      <label class="subscribe-label">
-        <input
-          class="subscribe-mail"
-          type="email"
-          name="mail"
-          placeholder="Enter your email"
-        />
-      </label>
-      <button type="button" class="btn subscribe-modal-btn">Submit</button>
-    </form>
+    <div class="subscribe-wrap">
+      <form class="subscribe-form">
+        <label class="subscribe-label">
+          <input
+            class="subscribe-mail"
+            type="email"
+            name="mail"
+            placeholder="Enter your email"
+          />
+        </label>
+        <button type="button" class="btn subscribe-modal-btn">Submit</button>
+      </form>
+    </div>
   </div>
 </div>
 
