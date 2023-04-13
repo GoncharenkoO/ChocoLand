@@ -1,9 +1,8 @@
 /* Subscribe Section */
 .subscribe {
-  /* max-width: 375px; */
   margin-right: auto;
   margin-left: auto;
-  background-color: #1e1823;
+  background-color: var(  --bgc-color);
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.2),
@@ -50,7 +49,6 @@
 /*tablet*/
 @media screen and (min-width: 768px) {
   .subscribe {
-    /* max-width: 768px; */
        padding: 72px 0 72px 0;
     background-image: linear-gradient(
         0deg,
@@ -90,19 +88,8 @@
   }
 }
 /*desktop*/
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1200x) and (-moz-min-device-pixel-ratio: 2),
-  screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1200px) and (min-resolution: 192dpi),
-  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .subscribe {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url(/img/subcribe/subcribe_b.jpg);
-  }
-}
 @media screen and (min-width: 1200px) {
   .subscribe {
-    /* max-width: 1200px; */
 
     padding: 72px 0 95px 0;
     background-image: linear-gradient(
