@@ -1,151 +1,196 @@
-<!--
-<div>
-    <dialog data-modal="modal2">
-      <button class="order-modal_window-close">&times; <svg class=".order-modal_window-close-icon">
-        <use href="./src/img/sprite.svg#iconx-close"> </use>
-      </svg>
-    </button>
-    <h3 class="order-modal-title"><span class="akcent-title">Buy</span> now</h3>
+<div class="modal buynow" data-modal="3">
+  <button
+    type="button"
+    class="modal-close-leave-a-review-btn js-modal-close"
+    data-modal="3"
+  >
+    <svg class="modal-close-icon-leave-a-review" width="24" height="24">
+      <use href="/img/sprite.svg#icon-close-modal24"></use>
+    </svg>
+  </button>
+  <div class="modal-form-leave-a-review-title-wrap">
+    <p class="modal-title section-title">
+      buy
+      <span class="modal-title-span">now</span>
+    </p>
+    <ul class="modal-list">
+      <li class="modal-item">
+        <picture class="modal-picture">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              /img/buy-now/buynow-tab-1.jpg    1x,
+              /img/buy-now/buynow-tab-1-2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /img/buy-now/buynow-tab-1.jpg    1x,
+              /img/buy-now/buynow-tab-1-2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              /img/buy-now/buynow-mob-1.jpg    1x,
+              /img/buy-now/buynow-mob-1-2x.jpg 2x
+            "
+          />
 
-    <div class="order-swiper-wrapper responsive-sellers">
-      <div class="order-swiper-slide">
-        <div class="order-slider-card">
-          <div class="order-slider-image">
-            <img
-              class="slider-demonstrate"
-              srcset="/img/buy-now/first-all-2x.jpg 2x"
-              src="./img/buy-now/first-min.jpg"
-              alt="kinder-chocolate-white-chocolate-chocolate-nuts"
-              width="167"
-              height="148"
-            />
-            <div class="weight-selection">100 g</div>
-          </div>
-        </div>
-      </div>
+          <img class="" src=" /img/buy-now/buynow-mob-1.jpg" alt="chocolate" />
+        </picture>
+        <p class="modal-item-text">100g</p>
+      </li>
+      <li class="modal-item">
+        <picture class="modal-picture">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              /img/buy-now/buynow-tab-2.jpg    1x,
+              /img/buy-now/buynow-tab-2-2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /img/buy-now/buynow-tab-2.jpg    1x,
+              /img/buy-now/buynow-tab-2-2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              /img/buy-now/buynow-mob-2.jpg    1x,
+              /img/buy-now/buynow-mob-2-2x.jpg 2x
+            "
+          />
 
-      <div class="order-swiper-slide">
-        <div class="order-slider-card">
-          <div class="order-slider-image">
-            <img
-              class="slider-demonstrate"
-              srcset="./img/buy-now/second-all-2x.jpg 2x"
-              src="./img/buy-now/second-min.jpg"
-              alt="white-chocolate-cocoa-bean-chocolate-cake"
-              width="167"
-              height="148"
-            />
-            <div class="weight-selection">200 g</div>
-          </div>
-        </div>
-      </div>
+          <img class="" src=" /img/buy-now/buynow-mob-2.jpg" alt="chocolate" />
+        </picture>
+        <p class="modal-item-text">200g</p>
+      </li>
+      <li class="modal-item">
+        <picture class="modal-picture">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              /img/buy-now/buynow-tab-3.jpg    1x,
+              /img/buy-now/buynow-tab-3-2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /img/buy-now/buynow-tab-3.jpg    1x,
+              /img/buy-now/buynow-tab-3-2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              /img/buy-now/buynow-mob-3.jpg    1x,
+              /img/buy-now/buynow-mob-3-2x.jpg 2x
+            "
+          />
 
-      <div class="order-swiper-slide">
-        <div class="order-slider-card">
-          <div class="order-slider-image">
-            <img
-              class="slider-demonstrate"
-              srcset="./img/buy-now/third-all-2x.jpg 2x"
-              src="./img/buy-now/third-min.jpg"
-              alt="dark-chocolate"
-              width="167"
-              height="148"
-            />
-            <div class="weight-selection">300 g</div>
+          <img class="" src=" /img/buy-now/buynow-mob-3.jpg" alt="chocolate" />
+        </picture>
+        <p class="modal-item-text">300g</p>
+      </li>
+    </ul>
+    <div class="modal-form-wrap">
+      <form class="modal-form-leave-a-review buy">
+        <label class="modal-form-leave-a-review-field buy">
+          <span class="label-desc">Personal information</span>
+          <input
+            class="modal-form-leave-a-review-input buy"
+            placeholder="Name"
+            required
+            name="user_name"
+            type="text"
+            pattern="^[a-zA-Zа-яА-Я]+"
+            minlength="2"
+          />
+          <input
+            class="modal-form-leave-a-review-input buy"
+            placeholder="Surname"
+            required
+            name="user_surname"
+            type="text"
+            pattern="^[a-zA-Zа-яА-Я]+"
+            minlength="2"
+          />
+        </label>
+        <label class="modal-form-leave-a-review-field buy">
+          <span class="label-desc">Email</span>
+          <input
+            class="modal-form-leave-a-review-input buy"
+            placeholder="Enter your email"
+            required
+            name="user-mail"
+            type="text"
+          />
+        </label>
+        <div class="modal-leave-a-review-container">
+          <div class="modal-icon-leave-a-review-wrap">
+            <label class="modal-form-leave-a-review-field buy">
+              <span class="label-desc">Phone number</span>
+              <span class="modal-form-phone-wraper buy"
+                ><svg class="flag-phone" width="24" height="24">
+                  <use href="/img/sprite.svg#icon-ukraine-flag"></use>
+                </svg>
+                +380</span
+              >
+              <input
+                class="modal-form-leave-a-review-input input-phone buy"
+                placeholder="Phone number"
+                required
+                name="user-phone"
+                type="tel"
+                pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xx-xxx-xx-xx"
+              />
+            </label>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <form class="order-modal-form">
-      <div class="customer-form-field">
-        <div class="form-field">
-          <label for="name" class="customer-form-label"
-            >Personal information
-          </label>
-          <div class="form-field-tablet">
-            <input
-              type="text"
-              class="customer-form-input"
-              name="name"
-              id="name"
-              placeholder="Name"
-            />
-            <input
-              type="text"
-              class="customer-form-input"
-              name="surname"
-              id="surname"
-              placeholder="Surname"
-            />
-          </div>
-        </div>
-        <div class="form-field">
-          <label for="mail" class="customer-form-label"
-            >Email
-            <input
-              type="email"
-              class="customer-form-input"
-              name="mail"
-              id="mail"
-              placeholder="Enter your email"
-              required
-            />
-          </label>
-        </div>
-        <div class="form-field">
-          <label for="phone" class="customer-form-label">Phone number </label>
-          <div class="customer-form-phone-wrapper">
-            <div class="phone-inner">
-              <svg class="phone-inner-icon">
-                <use href="./src/img/sprite.svg#icon-ukraine-flag"></use>
+          <div class="modal-icon-leave-a-review-wrap">
+            <label class="modal-form-leave-a-review-field buy">
+              <span class="label-desc">Card number</span>
+              <input
+                class="modal-form-leave-a-review-input buynow"
+                placeholder="Enter card"
+                required
+                name="credit-number"
+                type="tel"
+                pattern="\d*"
+                maxlength="19"
+                title="xx-xxx-xx-xx"
+              />
+              <svg class="icon-card" width="22" height="12">
+                <use href="/img/sprite.svg#iconMastercard"></use>
               </svg>
-              <span class="phone-inner-code">+380</span>
-            </div>
-            <input
-              type="tel"
-              class="customer-form-input_for-number"
-              name="phone"
-              id="phone"
-              placeholder="Phone number"
-            />
+            </label>
           </div>
+          <label class="modal-form-leave-a-review-field buy">
+            <span class="label-desc">Comment</span>
+            <textarea
+              required
+              name="user_message"
+              class="modal-form-leave-a-review-message buy"
+              placeholder="Enter text"
+            ></textarea>
+          </label>
         </div>
-        <div class="form-field">
-          <label for="number" class="customer-form-label">Card number </label>
-          <div class="customer-form-input_for_pay">
-            <input
-              type="number"
-              class="customer-form-input"
-              name="number"
-              id="number"
-              placeholder="Enter card"
-            />
-            <svg class="mastercard-icon" width="32" height="21">
-              <use href="./src/img/sprite.svg#iconMastercard"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="form-field">
-          <label for="comment" class="customer-form-label">Comment</label>
-          <textarea
-            class="comment-input"
-            name="comment"
-            id="comment"
-            rows="4"
-            placeholder="Enter text"
-          ></textarea>
-        </div>
-        <div class="button-field">
-          <button
-            type="submit"
-            class="modal-button-brand"
-            id="sellers-button-1"
-          >
-            Submit
-          </button>
-        </div>
-      </div>
-    </form>
+        <button class="modal-form-leave-a-review btn" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
   </div>
-</div> -->
+</div>
