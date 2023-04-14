@@ -1,31 +1,42 @@
 /* Leave-A-Review Modal Window */
 
-.modal {
+/* .overlay-leave-a-review {
   opacity: 0;
   visibility: hidden;
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  transition: ;
+} */
+.modal-leave-a-review {
+   /* opacity: 0;
+  visibility: hidden; */
+
+  padding: 32px 24px;
   border-radius: 15px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 311px;
+  height: 471px;
   z-index: 30;
   background-color: var(--body-bg-color);
   box-shadow: var(--modal-shadow);
   transition: transform var(--time-function);
 }
-.modal.review {
-  min-width: 311px;
-  min-height: 471px;
-  padding: 32px 24px;
-}
-@media screen and (min-width: 768px) {
-  .modal.review {
-    min-width: 517px;
-    min-height: 631px;
+@media screen and (min-width: 768px){
+  .modal-leave-a-review{
+    width: 517px;
+  height: 631px;
   }
 }
-.modal.active,
+.modal.leave-a-review.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
@@ -34,9 +45,12 @@
   position: absolute;
   top: 14px;
   right: 14px;
+  /* width: 24px;
+    height: 24px; */
   background-color: transparent;
   border-radius: 50%;
   border-color: transparent;
+  /* border: none; */
   padding: 0;
   transition: background-color var(--time-function);
 }
@@ -73,9 +87,9 @@
   transition: border-color var(--time-function);
 }
 
-.modal-form-phone-wraper {
+.modal-form-phone-wraper{
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 24px;
   display: flex;
   align-items: center;
@@ -84,22 +98,22 @@
   line-height: 1.33;
   color: rgba(0, 0, 0, 1);
 }
-.modal-form-phone-wraper::after {
+.modal-form-phone-wraper::after{
   position: absolute;
-  content: '';
+  content: "";
   width: 3px;
-  height: 30px;
-  top: -1px;
-  left: 90px;
+  height: 40px;
+  top: -5px;
+  left: 100px;
   background-color: rgba(250, 250, 250, 1);
   border-radius: 8px;
 }
 
-.flag-phone {
+.flag-phone{
   margin-right: 18px;
 }
 .input-phone {
-  padding-left: 130px;
+  padding-left: 150px;
 }
 
 .modal-icon-leave-a-review-wrap {
@@ -124,7 +138,6 @@
   outline: none;
 }
 .modal-form-leave-a-review-input::placeholder {
-  
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
@@ -140,7 +153,6 @@
 @media screen and (max-width: 767px) {
   .modal-form-leave-a-review-title.section-title {
     font-size: 20px;
-    margin-top: 7px;
   }
   .modal-form-leave-a-review-title-wrap {
     width: 255px;
@@ -151,11 +163,6 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .modal-form-phone-wraper {
-   
-    top: 20px;
-    
-  }
   .modal-leave-a-review {
     width: 517px;
     height: 631px;
@@ -173,7 +180,7 @@
   .modal-form-leave-a-review-message {
     height: 137px;
   }
-  .modal-form-leave-a-review-icon {
+  .modal-form-leave-a-review-icon{
     top: 20px;
   }
 }
