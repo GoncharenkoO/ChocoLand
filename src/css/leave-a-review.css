@@ -82,7 +82,7 @@
   padding-left: 18px;
   width: 100%;
   border-radius: 8px;
-  border: 1.5px solid rgba(0, 0, 0, 0.03);
+  border: 1.5px solid rgba(17, 17, 17, 0.1);
   background-color: var(--white-color);
   transition: border-color var(--time-function);
 }
@@ -100,6 +100,7 @@
 }
 .modal-form-phone-wraper::after{
   position: absolute;
+
   content: "";
   width: 3px;
   height: 40px;
@@ -130,7 +131,7 @@
   resize: none;
   height: 91px;
   border-radius: 8px;
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border: 1.5px solid rgba(17, 17, 17, 0.1);
   transition: border-color var(--time-function);
 }
 .modal-form-leave-a-review-message:focus {
@@ -142,12 +143,14 @@
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
 }
 .modal-form-leave-a-review-message::placeholder {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
 }
 
 @media screen and (max-width: 767px) {
@@ -181,6 +184,5 @@
     height: 137px;
   }
   .modal-form-leave-a-review-icon{
-    top: 20px;
   }
 }
