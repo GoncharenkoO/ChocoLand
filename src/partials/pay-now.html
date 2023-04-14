@@ -1,0 +1,120 @@
+<!-- modal-form -->
+<div class="modal pay-now" data-modal="4">
+  <button
+    type="button"
+    class="modal-close-pay-now-btn js-modal-close"
+    data-modal="4"
+  >
+    <svg class="modal-close-icon-pay-now" width="24" height="24">
+      <use href="/img/sprite.svg#icon-arrow-left"></use>
+    </svg>
+  </button>
+  <p class="modal-form-pay-now-title section-title">
+    PAY<span class="pay-now-span">NOW</span>
+  </p>
+  <ul class="pay-now-type-list">
+    <li class="pay-now-type-item">
+      <a href="#"
+        ><svg class="pay-now-icon" width="24" height="24">
+          <use href="/img/sprite.svg#icon-apple-pay"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="pay-now-type-item">
+      <a href="#"
+        ><svg class="pay-now-icon" width="24" height="24">
+          <use href="/img/sprite.svg#icon-google-pay"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="pay-now-type-item">
+      <a href="#"
+        ><svg class="pay-now-icon" width="24" height="24">
+          <use href="/img/sprite.svg#icon-paypal"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+  <button type="button" class="pay-now-first-btn btn">Pay now</button>
+  <p class="pay-now-subtitle">Or pay with card</p>
+  <div class="modal-form-wrap-pay-now">
+    <form class="modal-form-pay-now">
+      <span class="modal-form-pay-now-span">Enter your email</span>
+      <label class="modal-form-pay-now-field">
+        <input
+          class="modal-form-pay-now-input"
+          type="text"
+          name="user_mail"
+          required
+        />
+      </label>
+      <span class="modal-form-pay-now-span">Payment card</span>
+      <label class="modal-form-pay-now-field">
+        <input
+          class="modal-form-pay-now-input"
+          type="tel"
+          name="user_card_number"
+          required
+          minlength="16"
+          maxlength="16"
+          pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}"
+          title="1234 1234 1234 1234"
+          placeholder="1234 1234 1234 1234"
+        />
+      </label>
+      <div class="modal-form-input-card-wrap">
+        <label class="modal-form-pay-now-field">
+          <input
+            class="modal-form-pay-now-input"
+            type="tel"
+            name="user_card_number_action"
+            required
+            minlength="4"
+            maxlength="4"
+            pattern="[0-9]{2}/[0-9]{2}"
+            title="MM/YY"
+            placeholder="MM/YY"
+          />
+        </label>
+        <label class="modal-form-pay-now-field">
+          <input
+            class="modal-form-pay-now-input"
+            type="tel"
+            name="user_card_cvc"
+            required
+            minlength="3"
+            maxlength="3"
+            pattern="[0-9]{3}"
+            title="123"
+            placeholder="CVC"
+          />
+        </label>
+      </div>
+      <span class="modal-form-pay-now-span">Card name</span>
+      <label class="modal-form-pay-now-field">
+        <input
+          class="modal-form-pay-now-input"
+          type="text"
+          name="user_card_name"
+          required
+          minlength="3"
+          pattern="^[a-zA-Zа-яА-Я]+"
+        />
+      </label>
+      <span class="modal-form-pay-now-span">Country or rigion</span>
+    </form>
+    <select class="modal-form-pay-now-check" name="country" id="">
+      <option class="modal-form-pay-now-choose" value="Ukr">Ukraine</option>
+      <option value="Pl">Poland</option>
+      <option value="Grm">Germany</option>
+    </select>
+    <button type="button" class="pay-now-second-btn btn">Pay now</button>
+  </div>
+  <div class="modal-form-pay-now-product">
+    <ul class="modal-form-pay-now-list">
+      <li class="modal-form-pay-now-list"></li>
+      <li class="modal-form-pay-now-list"></li>
+      <li class="modal-form-pay-now-list"></li>
+    </ul>
+  </div>
+</div>

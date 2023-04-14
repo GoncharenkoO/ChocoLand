@@ -1,0 +1,117 @@
+/*    MODAL FORM */
+ .modal {
+  opacity: 0;
+  visibility: hidden;
+
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  background-color: var(--body-bg-color);
+  box-shadow: var(--modal-shadow);
+  transition: transform var(--time-function);
+}
+.modal.pay-now {
+  min-width: 311px;
+  min-height: 471px;
+  padding: 32px 24px;
+}
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-close-pay-now-btn {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  border-color: transparent;
+  padding: 0;
+  fill: black;
+  transition: background-color var(--time-function);
+}
+.modal-close-icon-pay-now {
+  transition: fill var(--time-function);
+}
+.modal-close-pay-now-btn:hover,
+.modal-close-pay-now-btn:focus {
+  background-color: #fcf1e0;
+}
+.modal-close-pay-now-btn:hover .modal-close-icon-pay-now:hover,
+.modal-close-pay-now-btn:focus .modal-close-icon-pay-now:focus {
+  fill: var(--main-accent-color);
+}
+.modal-form-pay-now-title{
+  margin-bottom: 18px;
+}
+.pay-now-span{
+  color: var(--main-accent-color);
+}
+.pay-now-type-list{
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+.pay-now-first-btn{
+  margin-bottom: 18px;
+  position: relative;
+}
+.pay-now-subtitle{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.pay-now-subtitle:before{
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--main-accent-color);
+  top: 190px;
+  left: 25px;
+}
+.modal-form-pay-now-span{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+.modal-form-pay-now-input{
+  margin-bottom: 14px;
+  height: 45px;
+  width: 100%;
+  color: var(--primary-color);
+  padding-left: 18px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1.5px solid rgba(0, 0, 0, 0.03);
+  background-color: var(--white-color);
+  transition: border-color var(--time-function);
+}
+.modal-form-input-card-wrap{
+  display: flex;
+  gap: 0;
+}
+.modal-form-pay-now-input:focus {
+  border-color: var(--main-accent-color);
+  outline: none;
+}
+.modal-form-pay-now-check{
+  width: 100%;
+  display: block;
+  height: 45px;
+  margin-bottom: 18px;
+  border: 1px solid var(--white-color);
+
+}

@@ -18,6 +18,7 @@
 
 /* Modal Windows */
 @import url('./buy-now.css');
+@import url('./pay-now.css');
 @import url('./leave-a-review.css');
 @import url('./explore-our-new.css');
 
@@ -96,7 +97,6 @@ body {
   --modal-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
 
 :root {
   font-size: 14px;
