@@ -23,8 +23,8 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
-    <script type="module" crossorigin src="/ChocoLand/assets/index-61dab6e0.js"></script>
-    <link rel="stylesheet" href="/ChocoLand/assets/index-e5d5fcab.css">
+    <script type="module" crossorigin src="/ChocoLand/assets/index-3c8d41c3.js"></script>
+    <link rel="stylesheet" href="/ChocoLand/assets/index-bfb55a12.css">
   </head>
   <body>
     <header class="header">
@@ -1098,12 +1098,11 @@
       <use href="/ChocoLand/assets/sprite-bbcdc05d.svg#icon-close-modal24"></use>
     </svg>
   </button>
-  <div class="modal-form-leave-a-review-title-wrap">
-    <p class="modal-form-leave-a-review-title section-title">
-      leave a review about
-      <span class="modal-leave-a-review-span">our chocolate</span>
-    </p>
-  </div>
+  <p class="modal-form-leave-a-review-title section-title">
+    leave a review about <br />
+    <span class="modal-leave-a-review-span">our chocolate</span>
+  </p>
+
   <div class="modal-form-wrap-leave-a-review">
     <form class="modal-form-leave-a-review">
       <label class="modal-form-leave-a-review-field">
@@ -1126,36 +1125,34 @@
           type="text"
         />
       </label>
-      <div class="modal-leave-a-review-container">
-        <div class="modal-icon-leave-a-review-wrap">
-          <label class="modal-form-leave-a-review-field">
-            <span class="modal-form-phone-wraper"
-              ><svg class="flag-phone" width="24" height="24">
-                <use href="/ChocoLand/assets/sprite-bbcdc05d.svg#icon-ukraine-flag"></use>
-              </svg>
-              +380</span
-            >
-            <input
-              class="modal-form-leave-a-review-input input-phone"
-              placeholder="Phone number"
-              required
-              name="user-phone"
-              type="tel"
-              pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              title="xx-xxx-xx-xx"
-            />
-          </label>
-        </div>
-        <label class="modal-form-leave-a-review-field">
-          <textarea
+      <label class="modal-form-leave-a-review-field">
+        <span class="modal-form-phone-wrapper">
+          <input
+            class="modal-form-leave-a-review-input input-phone"
+            placeholder="Phone number"
             required
-            name="user_message"
-            class="modal-form-leave-a-review-message"
-            placeholder="Enter text"
-          ></textarea>
-        </label>
-      </div>
-      <button class="modal-form-leave-a-review btn" type="button">Send</button>
+            name="user-phone"
+            type="tel"
+            pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xx-xxx-xx-xx"
+          />
+          <svg class="flag-phone" width="24" height="24">
+            <use href="/ChocoLand/assets/sprite-bbcdc05d.svg#icon-ukraine-flag"></use>
+          </svg>
+          <span class="modal-form-leave-review-input-tel-text">+380</span>
+        </span>
+      </label>
+      <label class="modal-form-leave-a-review-field-message">
+        <textarea
+          required
+          name="user_message"
+          class="modal-form-leave-a-review-message"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+      <button class="modal-form-leave-a-review-btn btn" type="button">
+        Send
+      </button>
     </form>
   </div>
 </div>
@@ -1233,8 +1230,8 @@
       <div class="overlay js-overlay-modal"></div>
 
     </main>
-    <script src="./js/script.js"></script>
     
+    <!-- <script type="module" src="/js/script.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
