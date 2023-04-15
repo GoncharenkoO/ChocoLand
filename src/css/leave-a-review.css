@@ -13,8 +13,8 @@
   z-index: 999;
   transition: ;
 } */
-.modal-leave-a-review {
-   /* opacity: 0;
+.modal.review {
+  /* opacity: 0;
   visibility: hidden; */
 
   padding: 32px 24px;
@@ -30,10 +30,10 @@
   box-shadow: var(--modal-shadow);
   transition: transform var(--time-function);
 }
-@media screen and (min-width: 768px){
-  .modal-leave-a-review{
+@media screen and (min-width: 768px) {
+  .modal.review {
     width: 517px;
-  height: 631px;
+    height: 631px;
   }
 }
 .modal.leave-a-review.active,
@@ -87,9 +87,9 @@
   transition: border-color var(--time-function);
 }
 
-.modal-form-phone-wraper{
+.modal-form-phone-wraper {
   position: absolute;
-  top: 20px;
+  top: 11px;
   left: 24px;
   display: flex;
   align-items: center;
@@ -98,23 +98,23 @@
   line-height: 1.33;
   color: rgba(0, 0, 0, 1);
 }
-.modal-form-phone-wraper::after{
+.modal-form-phone-wraper::after {
   position: absolute;
 
-  content: "";
-  width: 3px;
-  height: 40px;
-  top: -5px;
-  left: 100px;
-  background-color: rgba(250, 250, 250, 1);
+  content: '';
+  width: 1.5px;
+  height: 25px;
+  top: 0;
+  left: 85px;
+  background-color: rgba(17, 17, 17, 0.1);
   border-radius: 8px;
 }
 
-.flag-phone{
+.flag-phone {
   margin-right: 18px;
 }
 .input-phone {
-  padding-left: 150px;
+  padding-left: 130px;
 }
 
 .modal-icon-leave-a-review-wrap {
@@ -183,6 +183,7 @@
   .modal-form-leave-a-review-message {
     height: 137px;
   }
-  .modal-form-leave-a-review-icon{
+  .modal-form-phone-wraper {
+    top: 20px;
   }
 }
