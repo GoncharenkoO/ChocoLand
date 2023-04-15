@@ -1,5 +1,7 @@
 <!-- modal-form -->
+
 <div class="modal pay-now" data-modal="4">
+  <div class="modal-form-pay-now-left">
   <button
     type="button"
     class="modal-close-pay-now-btn js-modal-close"
@@ -15,22 +17,22 @@
   <ul class="pay-now-type-list">
     <li class="pay-now-type-item">
       <a href="#"
-        ><svg class="pay-now-icon" width="24" height="24">
+        ><svg class="pay-now-icon" width="34" height="34">
           <use href="/img/sprite.svg#icon-apple-pay"></use>
         </svg>
       </a>
     </li>
     <li class="pay-now-type-item">
       <a href="#"
-        ><svg class="pay-now-icon" width="24" height="24">
+        ><svg class="pay-now-icon" width="34" height="34">
           <use href="/img/sprite.svg#icon-google-pay"></use>
         </svg>
       </a>
     </li>
     <li class="pay-now-type-item">
       <a href="#"
-        ><svg class="pay-now-icon" width="24" height="24">
-          <use href="/img/sprite.svg#icon-paypal"></use>
+        ><svg class="pay-now-icon" width="18" height="18">
+          <use href="../img/sprite.svg#icon-paypal2"></use>
         </svg>
       </a>
     </li>
@@ -49,6 +51,9 @@
         />
       </label>
       <span class="modal-form-pay-now-span">Payment card</span>
+      <span class="modal-form-pay-now-icon-card-wrap"><svg class="modal-form-pay-now-card" width="24" height="24">
+        <use href="../img/sprite.svg#iconMastercard"></use>
+      </svg></span>
       <label class="modal-form-pay-now-field">
         <input
           class="modal-form-pay-now-input"
@@ -63,7 +68,7 @@
         />
       </label>
       <div class="modal-form-input-card-wrap">
-        <label class="modal-form-pay-now-field">
+        <label class="modal-form-pay-now-field-card-date">
           <input
             class="modal-form-pay-now-input"
             type="tel"
@@ -76,7 +81,10 @@
             placeholder="MM/YY"
           />
         </label>
-        <label class="modal-form-pay-now-field">
+        <span class="modal-form-pay-now-icon-cvc-wrap"><svg class="modal-form-pay-now-cvc" width="24" height="24">
+          <use href="../img/sprite.svg#icon-cvc"></use>
+        </svg></span>
+        <label class="modal-form-pay-now-field-card-cvc">
           <input
             class="modal-form-pay-now-input"
             type="tel"
@@ -91,6 +99,7 @@
         </label>
       </div>
       <span class="modal-form-pay-now-span">Card name</span>
+     
       <label class="modal-form-pay-now-field">
         <input
           class="modal-form-pay-now-input"
@@ -103,18 +112,52 @@
       </label>
       <span class="modal-form-pay-now-span">Country or rigion</span>
     </form>
-    <select class="modal-form-pay-now-check" name="country" id="">
+    <select class="modal-form-pay-now-check" name="country" id="country">
       <option class="modal-form-pay-now-choose" value="Ukr">Ukraine</option>
       <option value="Pl">Poland</option>
       <option value="Grm">Germany</option>
     </select>
     <button type="button" class="pay-now-second-btn btn">Pay now</button>
   </div>
-  <div class="modal-form-pay-now-product">
-    <ul class="modal-form-pay-now-list">
-      <li class="modal-form-pay-now-list"></li>
-      <li class="modal-form-pay-now-list"></li>
-      <li class="modal-form-pay-now-list"></li>
-    </ul>
+</div>
+  <div class="modal-form-pay-now-product-right">
+    <div class="modal-form-pay-now-product-wrap">
+    <p class="modal-form-pay-now-price-title">Total price:</p>
+    <p class="modal-form-pay-now-price-item">$ 399.99</p>
+        <picture class="modal-picture-pay-now">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              /img/buy-now/buynow-tab-1.jpg    1x,
+              /img/buy-now/buynow-tab-1-2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /img/buy-now/buynow-tab-1.jpg    1x,
+              /img/buy-now/buynow-tab-1-2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              /img/buy-now/buynow-mob-1.jpg    1x,
+              /img/buy-now/buynow-mob-1-2x.jpg 2x
+            "
+          />
+
+          <img class="" src=" /img/buy-now/buynow-mob-1.jpg" alt="chocolate" />
+        </picture>
+        <p class="modal-form-pay-now-weight">100g</p>
+        <select class="modal-form-pay-now-check-item" name="product" id="product">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      
+  </div>
   </div>
 </div>
