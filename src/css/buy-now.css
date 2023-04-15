@@ -43,7 +43,7 @@
   height: 29px;
   font-weight: 600;
   font-size: 14px;
-  line-height: calc(17px / 14px);
+  line-height: 1.2;
   color: var(--primary-color);
 
   background: var(--products-btn-bg);
@@ -63,6 +63,9 @@
   letter-spacing: -0.02em;
   color: #000000;
 }
+.input-phone.buy {
+  padding-left: 125px;
+}
 .modal-form-phone-wraper.buy {
   top: 33px;
 }
@@ -70,4 +73,103 @@
   position: absolute;
   bottom: 30px;
   right: 15px;
+  width: 22px;
+  height: 12px;
+}
+.modal-form-leave-a-review-input.buy::placeholder,
+.modal-form-leave-a-review-input.buynow::placeholder,
+.modal-form-leave-a-review-message.buy::placeholder {
+  font-size: 14px;
+}
+.modal-form-phone-wraper.buy {
+  position: absolute;
+  top: 32px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.33;
+  color: rgba(0, 0, 0, 1);
+}
+@media screen and (min-width: 768px) {
+  .modal.buynow {
+    max-width: 609px;
+    max-height: 650px;
+  }
+  .modal-form-leave-a-review-title-wrap.buy {
+    width: 100%;
+  }
+  .modal-title.section-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .modal-list {
+    display: flex;
+  }
+  .modal-item {
+    display: block;
+    padding: 18px 20px;
+    width: 160px;
+    height: 196px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal-picture {
+    margin-right: 14px;
+  }
+  .modal-item-text {
+    padding: 8px 29px;
+    width: 96px;
+    height: 33px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+  }
+  .modal-form-leave-a-review.buy {
+    margin-top: 40px;
+  }
+  .label-desc {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  .modal-form-leave-a-review-input.buynow {
+    width: 48%;
+  }
+  .modal-form-leave-a-review-input.buynow:not(:last-child) {
+    margin-right: 19px;
+  }
+  .modal-form-leave-a-review-input.buy::placeholder,
+  .modal-form-leave-a-review-input.buynow::placeholder,
+  .modal-form-leave-a-review-message.buy::placeholder {
+    font-size: 18px;
+  }
+  .modal-form-phone-wraper.buy {
+    top: 47px;
+  }
+  .icon-card {
+    position: absolute;
+    bottom: 43px;
+    right: 25px;
+    width: 30px;
+    height: 18px;
+  }
+  .modal-form-leave-a-review.btn.buy {
+    padding: 14px 40px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal.buynow {
+    max-width: 609px;
+    max-height: 1058px;
+    padding: 48px;
+    overflow: auto;
+  }
+  .modal-form-leave-a-review-input.buynow:not(:last-child) {
+    margin-right: 15px;
+  }
 }
