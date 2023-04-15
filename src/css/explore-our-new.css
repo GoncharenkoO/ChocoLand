@@ -98,7 +98,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: calc(17 / 14);
-  color: rgba(64, 64, 64, 0.3);
+  color: var(--placeholder-text);
 }
 @media screen and (min-width: 768px) {
   .explore-mail {
