@@ -1,61 +1,85 @@
-<div class="modal explore" data-modal="1">
-  <button class="modal-cross js-modal-close" data-modal="1">
+<div class="modal explore" data-modal="4">
+  <button class="modal-cross js-modal-close" data-modal="4">
     <svg class="cross" width="24" height="24">
       <use href="/img/sprite.svg#icon-close-modal24"></use>
     </svg>
   </button>
   <picture>
     <source
+      type="image/webp"
+      srcset="
+        /img/modal-subscribe/chocolate-md@1x.webp 1x,
+        /img/modal-subscribe/chocolate-md@2x.webp 2x
+      "
       media="(min-width: 1200px)"
+    />
+    <source
       srcset="
         /img/modal-subscribe/chocolate-md@1x.jpg 1x,
         /img/modal-subscribe/chocolate-md@2x.jpg 2x
       "
-      type="image/jpeg"
+      media="(min-width: 1200px)"
     />
     <source
+      type="image/webp"
+      srcset="
+        /img/modal-subscribe/chocolate-md@1x.webp 1x,
+        /img/modal-subscribe/chocolate-md@2x.webp 2x
+      "
       media="(min-width: 768px)"
+    />
+    <source
       srcset="
         /img/modal-subscribe/chocolate-md@1x.jpg 1x,
         /img/modal-subscribe/chocolate-md@2x.jpg 2x
       "
-      type="image/jpeg"
+      media="(min-width: 768px)"
     />
     <source
+      type="image/webp"
+      srcset="
+        /img/modal-subscribe/chocolate-sm@1x.webp 1x,
+        /img/modal-subscribe/chocolate-sm@2x.webp 2x
+      "
       media="(max-width: 767px)"
+    />
+    <source
       srcset="
         /img/modal-subscribe/chocolate-sm@1x.jpg 1x,
         /img/modal-subscribe/chocolate-sm@2x.jpg 2x
       "
+      media="(max-width: 767px)"
     />
 
     <img
       class="explore-modal-img"
       src="/img/modal-subscribe/chocolate-sm@1x.jpg"
       alt="chocolate"
-       width="538"
-        height="196"
-        loading="lazy"
+      width="538"
+      height="196"
     />
   </picture>
-  <div class="subscribe-info">
-    <h2 class="section-title sub-modal-title">
+  <div class="explore-info">
+    <h2 class="section-title explore-title">
       Explore our <br />
-      <span class="section-title-accent">new chocolate</span> first!
+      <span class="section-title-accent explore-title-accent"
+        >new chocolate</span
+      >
+      first!
     </h2>
 
-    <div class="subscribe-wrap">
-      <form class="subscribe-form">
-        <label class="subscribe-label">
+    <div class="explore-wrap">
+      <form class="explore-form">
+        <label class="explore-label">
           <input
-            class="subscribe-mail"
+            class="explore-mail"
             type="email"
             name="mail"
             required
             placeholder="Enter your email"
           />
         </label>
-        <button type="submit" class="btn subscribe-modal-btn">Submit</button>
+        <button type="submit" class="btn explore-modal-btn">Submit</button>
       </form>
     </div>
   </div>
