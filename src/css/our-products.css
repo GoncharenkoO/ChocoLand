@@ -44,7 +44,7 @@
   font-size: 14px;
   line-height: 17.07px;
   border: 1px solid;
-  background-color: #fafafa;
+  background-color: var(--body-bg-color);
   border-radius: 100px;
   border-color: rgba(17, 17, 17, 0.1);
   padding: 8px 20px;
@@ -61,7 +61,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: var(--white-color);
 }
 
 .swiper-slide img {

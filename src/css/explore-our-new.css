@@ -1,35 +1,13 @@
-/* Explore-Our-News Modal Window */
-.modal {
-  opacity: 0;
-  visibility: hidden;
-
-  position: fixed;
-  top: 50%;
-  left: 50%;
-
-  border-radius: 15px;
-  z-index: 30;
-  background-color: var(--body-bg-color);
-  box-shadow: var(--modal-shadow);
-  transform: translate(-50%, -50%) scale(0.75);
-  transition: transform var(--time-function);
-}
 .modal.explore {
-  min-width: 311px;
-  min-height: 350px;
+  width: 311px;
+  height: 350px;
 }
 
 @media screen and (min-width: 768px) {
   .modal.explore {
-    min-width: 538px;
-    min-height: 412px;
+    width: 538px;
+    height: 412px;
   }
-}
-
-.modal.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
 }
 .explore-modal-img {
   min-width: 311px;
@@ -61,28 +39,52 @@
   fill: var(--main-accent-color);
 }
 
-.subscribe-img {
-  margin-bottom: 32px;
+@media screen and (min-width: 768px) {
+  .cross {
+    width: 28px;
+    height: 28px;
+  }
 }
-.section-title.sub-modal-title {
+
+.section-title.explore-title {
   margin-bottom: 24px;
   text-align: left;
   font-size: 20px;
 }
+.section-title-accent.explore-title-accent {
+  font-size: 20px;
+}
 @media screen and (min-width: 768px) {
-  .section-title.sub-modal-title.section-title-accent {
+  .section-title.explore-title {
     margin-bottom: 28px;
+    text-align: left;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-title-accent.explore-title-accent {
     font-size: 24px;
   }
 }
 
-.subscribe-info {
+.explore-info {
   padding: 32px 24px;
 }
-.subscribe-wrap {
+@media screen and (min-width: 768px) {
+  .explore-info {
+    padding: 40px;
+  }
+}
+.explore-wrap {
   position: relative;
 }
-.subscribe-mail {
+@media screen and (min-width: 768px) {
+  .explore-wrap {
+    display: flex;
+    gap: 8px;
+  }
+}
+.explore-mail {
   padding: 14px 18px;
   width: 100%;
   min-height: 45px;
@@ -92,15 +94,37 @@
   box-shadow: 0 5.44px 5.44px #00000008;
   transition: border-color var(--time-function);
 }
-@media screen and (max-width: 374px) {
+.explore-mail::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: rgba(64, 64, 64, 0.3);
 }
-
-.subscribe-modal-btn {
-  min-height: 45px;
-  top: 89%;
-  left: 99%;
-  transform: translate(-99%, -89%) scale(1);
+@media screen and (min-width: 768px) {
+  .explore-mail {
+    min-width: 313px;
+    min-height: 52px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .explore-mail::placeholder {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+}
+.btn.explore-modal-btn {
   position: absolute;
+  min-height: 45px;
+  top: 88%;
+  left: 99%;
+  transform: translate(-99%, -88%) scale(1);
 
   transition: transform var(--time-function);
+}
+@media screen and (min-width: 768px) {
+  .btn.explore-modal-btn {
+    padding: 16px 42px;
+    min-width: 137px;
+    min-height: 52px;
+  }
 }

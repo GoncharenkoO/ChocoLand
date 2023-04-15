@@ -22,7 +22,7 @@
 @import url('./leave-a-review.css');
 @import url('./explore-our-new.css');
 
-@import url('./overlay.css');
+@import url('./overlay-modal.css');
 
 @font-face {
   font-family: 'Montserrat';
@@ -88,7 +88,6 @@ body {
   --main-accent-color: #fd9222;
   --main-hover-color: #fcf1e0;
   --white-color: #ffffff;
-  --products-btn-bg: #fafafa;
   --placeholder-color: rgba(64, 64, 64, 0.3);
   --color-text: rgba(255, 255, 255, 0.7);
   --bgc-color: #1e1823;
