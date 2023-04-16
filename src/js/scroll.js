@@ -9,6 +9,8 @@ for (let anchor of anchors) {
     document.getElementById(blockID).scrollIntoView({
       behavior: 'smooth',
       block: 'start',
+      speed: 600,
     });
   });
 }
+
