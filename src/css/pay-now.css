@@ -1,8 +1,8 @@
 /*    MODAL FORM */
 .modal.pay-now {
   width: 311px;
-  height: 615px;
   padding: 32px 24px;
+  height: 515px;
   overflow: scroll;
 }
 
@@ -14,7 +14,7 @@
   border-radius: 50%;
   border-color: transparent;
   padding: 0;
-  fill: black;
+  fill: var(--secondary-color);
   transition: background-color var(--time-function);
 }
 .modal-close-icon-pay-now {
@@ -22,7 +22,7 @@
 }
 .modal-close-pay-now-btn:hover,
 .modal-close-pay-now-btn:focus {
-  background-color: #fcf1e0;
+  background-color: var(--main-hover-color);
 }
 .modal-close-pay-now-btn:hover .modal-close-icon-pay-now:hover,
 .modal-close-pay-now-btn:focus .modal-close-icon-pay-now:focus {
@@ -86,7 +86,6 @@
 .modal-form-pay-now-input {
   width: 100%;
   padding: 14px 18px;
-  width: 100%;
   border-radius: 8px;
   border: 1.5px solid rgba(0, 0, 0, 0.03);
   background-color: var(--white-color);
@@ -131,6 +130,13 @@
   margin-bottom: 18px;
   border: 1px solid var(--white-color);
 }
+.modal-form-pay-now-check-item {
+  font-size: 16px;
+  line-height: 1.38;
+  border: none;
+   outline: none;
+  border-radius: 2px;
+}
 .pay-now-second-btn {
   margin-bottom: 18px;
 }
@@ -139,12 +145,6 @@
   width: 100%;
   height: 100%;
 }
-/* .modal-list-pay-now{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-} */
 .modal-form-pay-now-product {
   min-width: 311px;
   height: 100%;
@@ -155,8 +155,7 @@
 .modal-form-pay-now-product-wrap {
   width: 160px;
   margin: 0 auto;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 18px 15px;
 }
 .modal-form-pay-now-price-title {
   font-weight: 500;
@@ -181,27 +180,74 @@
   margin-bottom: 8px;
   margin-top: 8px;
 }
+.pay-now-img {
+  border-radius: 8px;
+}
+.modal-form-pay-now-check {
+    border-radius: 8px;
+}
+.modal-form-pay-now-check:focus {
+    border-color: var(--main-accent-color);
+    outline: none;
+    border-radius: 8px;
+}
+@media screen and (max-width: 767px) {
+  .modal-form-pay-now-product-wrap-one {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
+  .modal.pay-now {
+    min-width: 750px;
+    height: 612px;
+    padding: 28px 20px;
+    overflow: hidden;
+  }
+  .modal-form-pay-now-left {
+    width: 50%;
+    margin-left: 15px;
+  }
+  .modal-form-pay-now-product-right {
+    width: 50%;
+  }
+  .modal-form-pay-now-product-wrap-one {
+    margin: 0 auto;
+    padding: 18px 15px;
+  }
+  .modal-form-pay-now-title.section-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .modal-close-pay-now-btn {
+    top: 7px;
+    left: 17px;
+  }
+  .pay-now-first-btn {
+    margin-bottom: 10px;
+  }
+  .pay-now-second-btn {
+    margin-bottom: 10px;
+  }
+  .pay-now-subtitle {
+    margin-bottom: 10px;
+  }
   .pay-now-subtitle:before {
+    top: 122px;
     left: 380px;
     width: 100px;
   }
   .pay-now-subtitle::after {
+    top: 122px;
     width: 100px;
   }
-  .modal-form-pay-now-icon-card-wrap {
-    left: 690px;
-    bottom: 330px;
-  }
-  .modal-form-pay-now-field-card-date {
+    .modal-form-pay-now-field-card-date {
     width: 50%;
   }
   .modal-form-pay-now-field-card-cvc {
     width: 50%;
   }
-  .modal-form-pay-now-icon-cvc-wrap {
-    left: 690px;
-    bottom: 270px;
+  .modal-form-pay-now-cvc {
+    left: 135px
   }
   .pay-now {
     display: flex;
@@ -209,32 +255,85 @@
     align-items: center;
     flex-direction: row-reverse;
   }
-  .modal.pay-now {
-    min-width: 750px;
-    min-height: 471px;
+  .modal-form-pay-now-product-wrap,
+  .pay-now-type-list {
+    display: none;
   }
-  .modal-form-pay-now-left {
-    width: 50%;
+  .modal-form-pay-now-price-title {
+    font-size: 16px;
+    line-height: 1.53;
   }
-  .modal-form-pay-now-product-right {
-    width: 50%;
+
+  .modal-form-pay-now-price-item {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  .modal-form-pay-now-weight {
+    font-size: 16px;
+    line-height: 1.4;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal.pay-now {
     min-width: 1000px;
-    min-height: 671px;
+    height: 690px;
   }
-  .modal-form-pay-now-icon-card-wrap {
-    left: 900px;
+  .pay-now-type-list {
+    display: flex;
   }
-  .modal-form-pay-now-icon-cvc-wrap {
-    left: 900px;
-  }
+
   .pay-now-subtitle:before {
+    top: 195px;
     left: 550px;
   }
   .pay-now-subtitle::after {
+    top: 195px;
     right: 60px;
+  }
+  .pay-now-img {
+    margin: 0 auto;
+  }
+  .modal-form-pay-now-price-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .modal-form-pay-now-price-item {
+    font: 36px;
+    line-height: 1.2;
+  }
+  .modal-form-pay-now-product-wrap-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+  }
+  .modal-form-pay-now-title.section-title {
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
+  .pay-now-type-list {
+    margin-bottom: 15px;
+  }
+  .pay-now-first-btn {
+    margin-bottom: 12px;
+  }
+  .modal-form-pay-now-weight {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .pay-now-subtitle {
+    font-size: 16px;
+    line-height: 1.33;
+  }
+  .modal-form-pay-now-span {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .modal-form-pay-now-cvc {
+    left: 195px;
+  }
+  .modal-form-pay-now-cvc {
+    font-size: 16px;
+    line-height: 1.38;
   }
 }
