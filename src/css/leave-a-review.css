@@ -29,7 +29,7 @@
 }
 .modal-close-leave-a-review-btn:hover,
 .modal-close-leave-a-review-btn:focus {
-  background-color: #fcf1e0;
+  background-color: var(--main-hover-color);
 }
 .modal-close-leave-a-review-btn:hover .modal-close-icon-leave-a-review:hover,
 .modal-close-leave-a-review-btn:focus .modal-close-icon-leave-a-review:focus {

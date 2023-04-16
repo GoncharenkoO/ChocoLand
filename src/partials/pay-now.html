@@ -116,11 +116,13 @@
         </label>
         <span class="modal-form-pay-now-span">Country or region</span>
       </form>
-      <select class="modal-form-pay-now-check" name="country" id="country">
-        <option class="modal-form-pay-now-choose" value="Ukr">Ukraine</option>
-        <option value="Pl">Poland</option>
-        <option value="Grm">Germany</option>
-      </select>
+      <div class="modal-select-wrap">
+        <select class="modal-form-pay-now-check" name="country" id="country">
+          <option class="modal-form-pay-now-choose" value="Ukr">Ukraine</option>
+          <option value="Pl">Poland</option>
+          <option value="Grm">Germany</option>
+        </select>
+      </div>
       <button type="button" class="pay-now-second-btn btn">Pay now</button>
     </div>
   </div>
@@ -133,23 +135,19 @@
           type="image/webp"
           media="(min-width: 1200px)"
           srcset="/img/buy-now/rounded.webp 1x, /img/buy-now/rounded2x.webp 2x"
-          type="image/jpeg"
         />
         <source
           media="(min-width: 1200px)"
           srcset="/img/buy-now/rounded.jpg 1x, /img/buy-now/rounded2x.jpg 2x"
-          type="image/jpeg"
         />
         <source
           type="image/webp"
           media="(min-width: 768px)"
           srcset="/img/buy-now/rounded.webp 1x, /img/buy-now/rounded2x.webp 2x"
-          type="image/jpeg"
         />
         <source
           media="(min-width: 768px)"
           srcset="/img/buy-now/rounded.jpg 1x, /img/buy-now/rounded2x.jpg 2x"
-          type="image/jpeg"
         />
 
         <img
@@ -159,11 +157,11 @@
         />
       </picture>
       <p class="modal-form-pay-now-weight">100g</p>
-      <select class="modal-form-pay-now-check-item" name="product" id="product">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-      </select>
+        <select class="modal-form-pay-now-check-item" name="product">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
     </div>
     <div class="modal-form-pay-now-product-wrap">
       <p class="modal-form-pay-now-price-title">Total price:</p>
@@ -192,7 +190,7 @@
         />
       </picture>
       <p class="modal-form-pay-now-weight">100g</p>
-      <select class="modal-form-pay-now-check-item" name="product" id="product">
+      <select class="modal-form-pay-now-check-item" name="product">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -225,11 +223,13 @@
         />
       </picture>
       <p class="modal-form-pay-now-weight">100g</p>
-      <select class="modal-form-pay-now-check-item" name="product" id="product">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-      </select>
+
+        <select class="modal-form-pay-now-check-item" name="product">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+
     </div>
   </div>
 </div>

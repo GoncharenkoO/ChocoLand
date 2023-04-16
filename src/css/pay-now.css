@@ -134,8 +134,9 @@
   font-size: 16px;
   line-height: 1.38;
   border: none;
-   outline: none;
+  outline: none;
   border-radius: 2px;
+  cursor: pointer;
 }
 .pay-now-second-btn {
   margin-bottom: 18px;
@@ -183,13 +184,33 @@
 .pay-now-img {
   border-radius: 8px;
 }
+.modal-select-wrap {
+  position: relative;
+}
+.modal-select-wrap::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10.4px 6px 0 6px;
+  border-color: #1a1f36 transparent transparent transparent;
+
+  pointer-events: none;
+}
 .modal-form-pay-now-check {
-    border-radius: 8px;
+  appearance: none;
+  padding: 9px 12px;
+  border-radius: 8px;
 }
 .modal-form-pay-now-check:focus {
-    border-color: var(--main-accent-color);
-    outline: none;
-    border-radius: 8px;
+  border-color: var(--main-accent-color);
+  outline: none;
+  border-radius: 8px;
 }
 @media screen and (max-width: 767px) {
   .modal-form-pay-now-product-wrap-one {
@@ -240,14 +261,14 @@
     top: 122px;
     width: 100px;
   }
-    .modal-form-pay-now-field-card-date {
+  .modal-form-pay-now-field-card-date {
     width: 50%;
   }
   .modal-form-pay-now-field-card-cvc {
     width: 50%;
   }
   .modal-form-pay-now-cvc {
-    left: 135px
+    left: 135px;
   }
   .pay-now {
     display: flex;
