@@ -12,7 +12,6 @@
     buy
     <span class="modal-title-span">now</span>
   </p>
-  <!-- <div class="modal-form-leave-a-review-title-wrap buy"> -->
   <ul class="modal-list">
     <li class="modal-item">
       <picture class="modal-picture">
@@ -68,7 +67,15 @@
           alt="chocolate"
         />
       </picture>
-      <p class="modal-item-text">100g</p>
+      <label class="modal-item-text">
+        <input
+          class="modal-input-check"
+          type="checkbox"
+          name="weight"
+          value="gram"
+        />
+        <span class="modal-input-span">100g</span>
+      </label>
     </li>
     <li class="modal-item">
       <picture class="modal-picture">
@@ -125,18 +132,26 @@
           alt="chocolate"
         />
       </picture>
-      <p class="modal-item-text">200g</p>
+      <label class="modal-item-text">
+        <input
+          class="modal-input-check"
+          type="checkbox"
+          name="weight"
+          value="gram"
+        />
+        <span class="modal-input-span">200g</span>
+      </label>
     </li>
     <li class="modal-item">
-      <source
-        media="(min-width: 1200px)"
-        srcset="
-          /img/buy-now/buynow-tab-3.webp    1x,
-          /img/buy-now/buynow-tab-3-2x.webp 2x
-        "
-        type="image/webp"
-      />
       <picture class="modal-picture">
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            /img/buy-now/buynow-tab-3.webp    1x,
+            /img/buy-now/buynow-tab-3-2x.webp 2x
+          "
+          type="image/webp"
+        />
         <source
           media="(min-width: 1200px)"
           srcset="
@@ -181,39 +196,45 @@
           alt="chocolate"
         />
       </picture>
-      <label>
-    <label class="modal-item-text">
-    <input class= "modal-input-check visually-hidden" type="checkbox" name="weight" value="gram" />
-    300g
-  </label>
-      <!-- <p class="modal-item-text">300g</p> -->
+
+     <label class="modal-item-text">
+        <input
+          class="modal-input-check"
+          type="checkbox"
+          name="weight"
+          value="gram"
+        />
+        <span class="modal-input-span">300g</span>
+      </label>
     </li>
   </ul>
   <div class="modal-form-wrap">
     <form class="modal-form-buynow">
       <span class="label-desc">Personal information</span>
-      <label class="modal-form-buynow-field">
-        <input
-          class="modal-form-buynow-input"
-          placeholder="Name"
-          required
-          name="user_name"
-          type="text"
-          pattern="^[a-zA-Zа-яА-Я]+"
-          minlength="2"
-        />
-      </label>
-      <label class="modal-form-buynow-field">
-        <input
-          class="modal-form-buynow-input"
-          placeholder="Surname"
-          required
-          name="user_surname"
-          type="text"
-          pattern="^[a-zA-Zа-яА-Я]+"
-          minlength="2"
-        />
-      </label>
+     <div class="buynow-form-name">
+        <label class="modal-form-buynow-field">
+          <input
+            class="modal-form-buynow-input"
+            placeholder="Name"
+            required
+            name="user_name"
+            type="text"
+            pattern="^[a-zA-Zа-яА-Я]+"
+            minlength="2"
+          />
+        </label>
+        <label class="modal-form-buynow-field">
+          <input
+            class="modal-form-buynow-input"
+            placeholder="Surname"
+            required
+            name="user_surname"
+            type="text"
+            pattern="^[a-zA-Zа-яА-Я]+"
+            minlength="2"
+          />
+        </label>
+     </div>
       <span class="label-desc">Email</span>
       <label class="modal-form-buynow-field">
         <input
@@ -245,9 +266,7 @@
       <span class="label-desc">Card number</span>
       <span class="modal-form-phone-buy-wrapper"
         ><svg class="icon-card" width="24" height="24">
-          <use
-            href="/img/sprite.svg#iconMastercard"
-          ></use>
+          <use href="/img/sprite.svg#iconMastercard"></use>
         </svg>
       </span>
       <label class="modal-form-buynow-field">
@@ -271,10 +290,7 @@
           placeholder="Enter text"
         ></textarea>
       </label>
-      <button class="modal-form-buynow btn buy" type="submit">
-        Submit
-      </button>
+      <button class="modal-form-buynow-btn btn" type="submit">Submit</button>
     </form>
   </div>
-  <!-- </div> -->
 </div>
