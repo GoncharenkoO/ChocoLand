@@ -15,6 +15,7 @@
 @import url('./reviews.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
+@import url('./slick.css');
 
 /* Modal Windows */
 @import url('./buy-now.css');
@@ -77,7 +78,6 @@
     url(/fonts/Montserrat-BoldItalic.woff2) format('woff2');
 }
 
-
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -92,7 +92,7 @@ body {
   --placeholder-color: rgba(64, 64, 64, 0.3);
   --color-text: rgba(255, 255, 255, 0.7);
   --bgc-color: #1e1823;
-   --time-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --time-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   --modal-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -137,19 +137,19 @@ body {
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 365px;
+    max-width: 365px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 734px;
+    max-width: 734px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1166px;
+    max-width: 1166px;
   }
 }
 .section {
