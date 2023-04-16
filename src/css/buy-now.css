@@ -1,8 +1,6 @@
 .modal.buynow {
-  width: 95%;
-  max-width: 311px;
-  height: 95%;
-  max-height: 500px;
+  min-width: 311px;
+  max-height: 90vh;
   overflow-y: scroll;
   padding: 32px 24px;
 }
@@ -194,8 +192,7 @@
 
 @media screen and (min-width: 768px) {
   .modal.buynow {
-    max-width: 609px;
-    max-height: 650px;
+    min-width: 609px;
     padding: 40px;
   }
 
@@ -295,14 +292,11 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .modal.buynow {
-    max-width: 609px;
-    max-height: 1058px;
-    padding: 48px;
-    overflow: auto;
-    border-radius: 15px;
+  .modal.buynow::-webkit-scrollbar {
+    width: 7px;
+    background-color: var(--placeholder-color);
   }
-  .modal-form-leave-a-review-input.buynow:not(:last-child) {
-    margin-right: 15px;
+  .modal.buynow {
+    padding: 48px;
   }
 }
